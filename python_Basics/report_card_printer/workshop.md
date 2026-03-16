@@ -88,3 +88,20 @@ Now you need to add the student's age to the report card. For that you'll use an
 Declare a variable named `age` and assign it the integer value `20`.
 
 Then, print the value and data type of `age` together separated by a comma. Check the output in the terminal that shows the value of `age` and its type as `int` (integer).
+
+## Step 8
+
+Now, add the student's score.
+
+Declare a variable named `score` and assign it the value `80.5`.
+
+Although both `age` and `score` are numbers, they may not be the same kind. Python provides a function called `isinstance()` to check this.
+
+### Example Code
+
+```python
+x = 10
+print(isinstance(x, int))  # Output: True
+```
+
+Use `isinstance()` to check whether `score` is an `int`, and print the result to the terminal as shown in the example above.
