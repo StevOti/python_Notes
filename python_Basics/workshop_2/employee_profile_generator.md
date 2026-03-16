@@ -159,3 +159,13 @@ The syntax is `string[start:stop]`, where:
 For example, if `text = 'Python'`, then `text[0:2]` gives `'Py'`.
 
 Define `employee_code` as `'DEV-2026-JD-001'`. After that, create a variable `department` and assign it the slice of `employee_code` from index `0` to `3`. Then print `department` to the terminal.
+
+## Step 17
+
+You can slice from any part of the string, not just the beginning. And it is helpful in many cases.
+
+Create a variable `year_code` and assign it the slice of `employee_code` from index `4` to `8`. This will extract `2026`.
+
+Then create a variable `initials` and assign it the slice of `employee_code` from index `9` to `11`. This will extract `JD`.
+
+Finally, print both variables to the terminal.
