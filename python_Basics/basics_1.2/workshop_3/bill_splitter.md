@@ -82,3 +82,19 @@ half = 10 / 2
 Create a variable named `final_bill` and assign it the result of dividing `running_total` by `num_of_friends`.
 
 Finally, use the `print()` function to display the string `Bill per person:` followed by a space and the value of `final_bill`.
+
+## Step 8
+The bill is split, but division often results in long decimal numbers. Since money is typically represented with two decimal places, you should round the final result.
+
+Python provides a built-in `round()` function for this. It takes two arguments: the number you want to round and the number of decimal places to keep. Here's an example:
+
+```python
+num = 4.815162342
+round(num, 3)  # 4.815
+```
+
+Use the `round()` function to round `final_bill` to two decimal places and assign the result to a new variable named `each_pays`.
+
+Finally, use `print()` to display the string `Each person pays:` followed by a space and your `each_pays` variable.
+
+With that, the bill splitter workshop is complete.
