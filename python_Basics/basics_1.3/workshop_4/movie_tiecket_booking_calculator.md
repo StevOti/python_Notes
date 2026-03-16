@@ -141,3 +141,17 @@ Then, add an `else` clause to your `if` statement and print `Ticket booking fail
 Users between `18` and `21` can book tickets, but only when the `show_time` is not `Evening`.
 
 Update the condition of the `if age >= 21:` line. Use the `and` operator to build an expression checking if `age` is greater than or equal to `18` and `show_time` is not `Evening`. Then use the `or` operator to combine that expression with the existing condition. Do not create new variables.
+
+## Step 17
+There is one more exception to the booking rules. Users between `18` and `21` can book evening shows if they are members.
+
+When multiple logical operators are used in an `if` statement, conditions joined with `and` are evaluated before conditions joined with `or`. Parentheses `()` are used in Python to group conditions and control the order in which they are evaluated.
+
+```python
+if condition1 and (condition2 or condition3):
+	# Code to execute if conditions evaluate to True
+else:
+	# Code to execute if conditions evaluate to False
+```
+
+Update the condition of the `if age >= 21 or age >= 18 and show_time != 'Evening':` line to add another condition using the `or` operator to check if `is_member` is truthy. Use parentheses `()` to group the `show_time != 'Evening'` and `is_member` conditions together as shown in the above example.
