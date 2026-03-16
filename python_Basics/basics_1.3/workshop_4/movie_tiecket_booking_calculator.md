@@ -155,3 +155,21 @@ else:
 ```
 
 Update the condition of the `if age >= 21 or age >= 18 and show_time != 'Evening':` line to add another condition using the `or` operator to check if `is_member` is truthy. Use parentheses `()` to group the `show_time != 'Evening'` and `is_member` conditions together as shown in the above example.
+
+## Step 18
+In Python, an `if` statement can also be placed inside the body of another `if` statement. This is called a nested `if` statement.
+
+A nested `if` statement allows you to check an additional condition only after the first condition has already been satisfied. The inner `if` statement will run only if the outer `if` condition is true.
+
+```python
+if condition1:
+	# Code to execute if condition1 is True
+	if condition2:
+		# Code to execute if both conditions are True
+```
+
+Now you will calculate service charges based on the type of seat the user has selected.
+
+Inside the body of the last `if` statement, below the `print('Ticket booking condition satisfied')` line, create a variable named `service_charges` and set it to `0`. Make sure to indent your code by four spaces to keep it inside the outer `if` statement body.
+
+Then, create a nested `if` statement to check if `seat_type` is equal to `Premium`. Inside the body of the nested `if` statement, update the `service_charges` value to `5`.
