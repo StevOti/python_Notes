@@ -111,3 +111,9 @@ Use `isinstance()` to check whether `score` is an `int`, and print the result to
 The output is `False`, which shows that `score` is not an `int`.
 
 Another common kind of number in Python is `float`, which represents a number with decimals. Replace `int` with `float` in the existing `isinstance()` call to confirm this.
+
+## Step 10
+
+The output is `True`, confirming that `score` is a `float`.
+
+Complete the report card by printing the `score` value along with its data type using a single `print()`.
