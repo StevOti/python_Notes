@@ -69,3 +69,13 @@ Below the `is_member` variable create another variable named `is_weekend` to ind
 The user qualifies for a membership discount if they are a member.
 
 Create a variable named `discount` and set its value to `0`. This will store the discount the user gets on the movie ticket.
+
+## Step 8
+In Python, `if` conditions don't have to compare values explicitly to `True` or `False`. Instead, they rely on the truthiness of values. Truthy values evaluate to `True` in a boolean context, such as the condition of an `if` statement. These include non-zero numbers, non-empty strings, and the boolean value `True`.
+
+```python
+if value:
+	print('value is truthy')
+```
+
+Create an `if` statement to check if `is_member` is truthy. Inside the body of the `if` statement, update the `discount` value to `3` and print `User qualifies for membership discount` to the terminal.
