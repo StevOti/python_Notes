@@ -114,3 +114,8 @@ After that, you will see that the `discount` value now remains `0`, because both
 Now create a variable named `extra_charges` and set it to `0`. This will represent extra charges to apply to the movie ticket on weekends.
 
 Then, create an `if` statement to check if `is_weekend` is truthy. Inside the body of `if` statement, update the `extra_charges` value to `2` and print `Extra charges will be applied` in the terminal.
+
+## Step 13
+Now, add an `else` clause to your `if` statement and print `No extra charges will be applied` inside the `else` body. This will print the message only when the extra charges condition is false.
+
+Then, below the `else` clause, use the `print()` call to display a message that shows `Extra charges:` followed by the updated value of `extra_charges` and check the output in the terminal.
