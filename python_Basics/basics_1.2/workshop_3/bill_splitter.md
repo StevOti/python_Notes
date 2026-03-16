@@ -33,3 +33,19 @@ change = 2.35
 ```
 
 Create four variables: `appetizers` set to `37.89`, `main_courses` set to `57.34`, `desserts` set to `39.39`, and `drinks` set to `64.21`.
+## Step 4
+Now that you have stored the individual costs, you can calculate the total. In Python, you use the addition operator `+` to sum values together.
+
+The `+=` operator adds a value to an existing variable and updates it at the same time. For example:
+
+```python
+total = 10
+total += 2 + 2 + 1
+print(total)  # total is now 15
+```
+
+Use the `+=` operator once to add `appetizers`, `main_courses`, `desserts`, and `drinks` to `running_total`.
+
+Finally, use `print()` to display the string `Total bill so far:` followed by a space and the value of `running_total`.
+
+> **Note:** You might notice that the output has more decimal digits than expected. As you learned in a previous lesson, this happens because numbers are stored in binary, and many decimal values cannot be represented exactly in this format, which leads to rounding errors.
