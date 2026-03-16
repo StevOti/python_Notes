@@ -136,3 +136,13 @@ Create a variable `employee_card` and assign it an f-string that displays `Emplo
 Currently, `employee_card` only shows the employee's name. Now you're going to add more information to it.
 
 Update the `employee_card` assignment to include the employee's age. The final string should look like this: `Employee: [name] | Age: [age]` with `[name]` replaced with the employee's name, and `[age]` replaced with the employee's age.
+
+## Step 15
+
+Now it's time to add the final details to the card.
+
+Create a variable named `position` with the value of the string `Data Analyst` and a variable named `salary` with the value of the integer `75000`.
+
+Then, update your `employee_card` f-string to include the position and salary. It should follow this exact format: `Employee: [full_name] | Age: [employee_age] | Position: [position] | Salary: $[salary]`. Replace the placeholders with the corresponding variables.
+
+Finally, print `employee_card` to see the result.
