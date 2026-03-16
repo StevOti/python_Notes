@@ -99,3 +99,9 @@ print(type(my_num))  # <class 'str'>
 ```
 
 Update your `employee_info` assignment to convert `employee_age` to a string using `str(employee_age)`.
+
+## Step 11
+
+Now complete the sentence by concatenating the string ` years old` to the end of `employee_info`. Remember to include a space at the beginning of your string.
+
+Finally, print `employee_info`.
