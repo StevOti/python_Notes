@@ -35,3 +35,7 @@ Create a variable `full_name` by concatenating `first_name` and `last_name`. The
 If you concatenate two strings like `'John' + 'Doe'`, the result is `'JohnDoe'` with no space. To fix this, you need to concatenate a string containing a space (`' '`) between them.
 
 Update your `full_name` variable so it concatenates `first_name`, a space, and `last_name`.
+
+## Step 4
+
+Next, create a variable `address` to store the employee's address. Assign it the string `123 Main Street`, and finally print `address`.
