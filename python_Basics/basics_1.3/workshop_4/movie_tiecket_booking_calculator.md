@@ -129,3 +129,10 @@ if condition1 or condition2:
 ```
 
 Extra charges should also apply if the show is in the evening. Update the condition of the `if is_weekend:` line by using the `or` operator to combine the existing condition with a second condition checking if `show_time` is equal to the string `Evening`.
+
+## Step 15
+Now you will check if the user satisfies the conditions to book a movie ticket. Users with age `21` or above can always book tickets without any restrictions.
+
+Create an `if` statement to check if `age` is greater than or equal to `21`. Inside the body of the `if` statement, print `Ticket booking condition satisfied` to the terminal.
+
+Then, add an `else` clause to your `if` statement and print `Ticket booking failed due to restrictions` inside the `else` body.
