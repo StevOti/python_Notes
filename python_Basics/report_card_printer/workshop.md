@@ -105,3 +105,9 @@ print(isinstance(x, int))  # Output: True
 ```
 
 Use `isinstance()` to check whether `score` is an `int`, and print the result to the terminal as shown in the example above.
+
+## Step 9
+
+The output is `False`, which shows that `score` is not an `int`.
+
+Another common kind of number in Python is `float`, which represents a number with decimals. Replace `int` with `float` in the existing `isinstance()` call to confirm this.
