@@ -34,3 +34,20 @@ You will learn more about functions in upcoming lessons. For now, know that a fu
 In the example above, `print(greeting)` is a function call, and `greeting` is the argument of the function.
 
 Refer to the example and print the `name` variable. Check the output in the terminal.
+
+## Step 3
+
+You should now see the student name printed in the terminal.
+
+Python provides a function named `type()` that you can use to check the type of a value.
+
+### Example Code
+
+```python
+platform = 'freeCodeCamp'
+print(type(platform))  # Output: <class 'str'>
+```
+
+In the example above, the output `<class 'str'>` means that the variable passed to the `type()` function is a string.
+
+Use the `type()` function with `name` as its argument and print the output like the example. Check the output in the terminal that shows `name` is of the type `str` (string).
