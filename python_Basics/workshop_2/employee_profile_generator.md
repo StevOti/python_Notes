@@ -69,3 +69,12 @@ Remove all the `print()` statements from your code.
 ## Step 7
 
 Now create a variable named `employee_age` and assign it the integer `28`.
+
+## Step 8
+
+Now, you want to create a string that displays the employee's age.
+
+Start by creating a variable `employee_info` and assign it the result of concatenating:
+
+- the `full_name` variable.
+- a string consisting of the characters `is` preceded and followed by a space.
