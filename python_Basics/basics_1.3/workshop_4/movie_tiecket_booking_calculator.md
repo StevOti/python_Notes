@@ -40,3 +40,8 @@ In this step, you will check if the user is eligible to book a movie ticket base
 Create an `if` statement to check if `age` is greater than `17`. Inside the body of the `if` statement, print `User is eligible to book a ticket.` This will print the message only when the user's age is greater than `17`.
 
 Remember to indent the body of the `if` statement and surround the message with single or double quotes inside the `print()` call.
+
+## Step 4
+Now you will check whether the user is allowed to book an evening show based on their age.
+
+Create an `if` statement to check if `age` is greater than or equal to `21`. Inside the body of the `if` statement, print `User is eligible for Evening shows.`
