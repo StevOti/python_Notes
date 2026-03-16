@@ -51,3 +51,11 @@ print(type(platform))  # Output: <class 'str'>
 In the example above, the output `<class 'str'>` means that the variable passed to the `type()` function is a string.
 
 Use the `type()` function with `name` as its argument and print the output like the example. Check the output in the terminal that shows `name` is of the type `str` (string).
+
+## Step 4
+
+The report card should also show whether the student is currently enrolled. This can be represented using a boolean value.
+
+Boolean values represent a yes-or-no condition, and they are often used to make decisions in code. There are only two boolean values: `True` and `False`.
+
+Declare a variable named `is_student` and assign it the value `True`.
