@@ -78,3 +78,9 @@ Start by creating a variable `employee_info` and assign it the result of concate
 
 - the `full_name` variable.
 - a string consisting of the characters `is` preceded and followed by a space.
+
+## Step 9
+
+Now try to concatenate `employee_age` to the end of your `employee_info` string.
+
+Once you've done so, you'll see a `TypeError` in the terminal. In the next step, you'll work on fixing it.
