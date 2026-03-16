@@ -59,3 +59,9 @@ print(greeting)  # Hello World
 Remember that strings are immutable, therefore this operation does not change the original string. Instead it creates a new string and reassigns it to the variable.
 
 Use the `+=` operator to add the string `, Apartment 4B` to your `address` variable.
+
+## Step 6
+
+The output in the terminal is getting crowded. Before you continue, it's time to clean it up.
+
+Remove all the `print()` statements from your code.
