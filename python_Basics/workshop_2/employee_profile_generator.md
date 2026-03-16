@@ -29,3 +29,9 @@ print(greeting)  # Output: HelloWorld
 ```
 
 Create a variable `full_name` by concatenating `first_name` and `last_name`. Then print `full_name`.
+
+## Step 3
+
+If you concatenate two strings like `'John' + 'Doe'`, the result is `'JohnDoe'` with no space. To fix this, you need to concatenate a string containing a space (`' '`) between them.
+
+Update your `full_name` variable so it concatenates `first_name`, a space, and `last_name`.
