@@ -119,3 +119,13 @@ Then, create an `if` statement to check if `is_weekend` is truthy. Inside the bo
 Now, add an `else` clause to your `if` statement and print `No extra charges will be applied` inside the `else` body. This will print the message only when the extra charges condition is false.
 
 Then, below the `else` clause, use the `print()` call to display a message that shows `Extra charges:` followed by the updated value of `extra_charges` and check the output in the terminal.
+
+## Step 14
+In Python, the `or` operator is used to check whether at least one of two conditions is true. Here's how you can use it in an `if` statement:
+
+```python
+if condition1 or condition2:
+	# Code to execute if any condition is True
+```
+
+Extra charges should also apply if the show is in the evening. Update the condition of the `if is_weekend:` line by using the `or` operator to combine the existing condition with a second condition checking if `show_time` is equal to the string `Evening`.
