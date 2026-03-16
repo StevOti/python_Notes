@@ -79,3 +79,16 @@ if value:
 ```
 
 Create an `if` statement to check if `is_member` is truthy. Inside the body of the `if` statement, update the `discount` value to `3` and print `User qualifies for membership discount` to the terminal.
+
+## Step 9
+You should also handle the case when the user does not qualify for a membership discount.
+
+Add an `else` clause to your `if` statement and print `User does not qualify for membership discount` inside the `else` body.
+
+You can print a message followed by a variable like this:
+
+```python
+print('Total:', total)
+```
+
+You also want to display the updated value of `discount`. Below the `if...else` statement, use the `print()` call to display a message that shows `Discount:` followed by the updated value of `discount`. Then, check the output in the terminal.
