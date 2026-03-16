@@ -104,3 +104,8 @@ if condition1 and condition2:
 The membership discount should only apply to members if their age is greater than or equal to `21`.
 
 Update the condition of the `if is_member:` line by using the `and` operator to combine the existing condition with another condition checking if `age` is greater than or equal to `21`.
+
+## Step 11
+Now change the value of the `is_member` variable to `False` as the user is not a member.
+
+After that, you will see that the `discount` value now remains `0`, because both conditions must be satisfied for the discount to apply.
