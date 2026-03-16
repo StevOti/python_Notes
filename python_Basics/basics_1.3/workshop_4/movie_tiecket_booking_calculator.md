@@ -57,3 +57,10 @@ else:
 ```
 
 Now, add an `else` clause to your `if` statement and print `User is not eligible for Evening shows` inside the `else` body. This will print only when the condition in the `if` statement is false.
+
+## Step 6
+Some information can only be true or false. As you have learned in previous lessons, this can be represented using boolean values.
+
+Create a variable named `is_member` to indicate whether the user is a member and set its value to `True`.
+
+Below the `is_member` variable create another variable named `is_weekend` to indicate whether the movie show is on a weekend and set its value to `False`. Do not surround the value with quotes.
