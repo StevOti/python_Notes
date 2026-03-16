@@ -14,3 +14,18 @@ print(greeting)  # Output: Hello
 ```
 
 Create a variable `first_name` which stores the string `John` and a variable `last_name` which stores the string `Doe`. Then print `first_name` and `last_name`.
+
+## Step 2
+
+In Python, you can combine strings using the `+` operator. This is called concatenation.
+
+Here is an example:
+
+### Example Code
+
+```python
+greeting = 'Hello' + 'World'
+print(greeting)  # Output: HelloWorld
+```
+
+Create a variable `full_name` by concatenating `first_name` and `last_name`. Then print `full_name`.
