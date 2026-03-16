@@ -130,3 +130,9 @@ print(f'Hello {name}')  # Output: Hello John
 ```
 
 Create a variable `employee_card` and assign it an f-string that displays `Employee:` followed by a space and the value of the `full_name` variable.
+
+## Step 14
+
+Currently, `employee_card` only shows the employee's name. Now you're going to add more information to it.
+
+Update the `employee_card` assignment to include the employee's age. The final string should look like this: `Employee: [name] | Age: [age]` with `[name]` replaced with the employee's name, and `[age]` replaced with the employee's age.
