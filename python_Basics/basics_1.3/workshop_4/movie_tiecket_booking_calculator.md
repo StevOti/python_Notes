@@ -136,3 +136,8 @@ Now you will check if the user satisfies the conditions to book a movie ticket. 
 Create an `if` statement to check if `age` is greater than or equal to `21`. Inside the body of the `if` statement, print `Ticket booking condition satisfied` to the terminal.
 
 Then, add an `else` clause to your `if` statement and print `Ticket booking failed due to restrictions` inside the `else` body.
+
+## Step 16
+Users between `18` and `21` can book tickets, but only when the `show_time` is not `Evening`.
+
+Update the condition of the `if age >= 21:` line. Use the `and` operator to build an expression checking if `age` is greater than or equal to `18` and `show_time` is not `Evening`. Then use the `or` operator to combine that expression with the existing condition. Do not create new variables.
