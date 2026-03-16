@@ -84,3 +84,18 @@ Start by creating a variable `employee_info` and assign it the result of concate
 Now try to concatenate `employee_age` to the end of your `employee_info` string.
 
 Once you've done so, you'll see a `TypeError` in the terminal. In the next step, you'll work on fixing it.
+
+## Step 10
+
+As you can see Python raised a `TypeError: can only concatenate str (not "int") to str`. This happens because Python does not allow you to concatenate text (strings) and numbers (integers) directly.
+
+To fix this, you must convert the number to a string first using the `str()` function, which returns the string version of an object:
+
+### Example Code
+
+```python
+my_num = str(42)
+print(type(my_num))  # <class 'str'>
+```
+
+Update your `employee_info` assignment to convert `employee_age` to a string using `str(employee_age)`.
