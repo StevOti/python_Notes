@@ -65,3 +65,7 @@ Use the `+=` operator to add the string `, Apartment 4B` to your `address` varia
 The output in the terminal is getting crowded. Before you continue, it's time to clean it up.
 
 Remove all the `print()` statements from your code.
+
+## Step 7
+
+Now create a variable named `employee_age` and assign it the integer `28`.
