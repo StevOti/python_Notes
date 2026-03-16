@@ -19,3 +19,17 @@ Create a variable named `running_total` and assign it the value `0`.
 Next, you need to account for the number of people sharing the bill. Store this value in a variable, as you did in the previous step.
 
 Create a variable named `num_of_friends` and assign it the value of `4`. This will be used later in the workshop to calculate the final split.
+
+## Step 3
+
+Each course has a cost. You need to store these amounts in variables to use them later. Since these amounts include cents, you will use the `float` type, which is used to represent decimal numbers.
+
+Here's an example of a variable with a float value:
+
+### Example Code
+
+```python
+change = 2.35
+```
+
+Create four variables: `appetizers` set to `37.89`, `main_courses` set to `57.34`, `desserts` set to `39.39`, and `drinks` set to `64.21`.
