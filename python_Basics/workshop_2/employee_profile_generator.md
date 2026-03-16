@@ -113,3 +113,20 @@ Now you're going to use the `str()` function one more time. Just like with age, 
 Create a variable named `experience_years` and assign it the integer `5`.
 
 Then, create a variable `experience_info`. Assign it a string formed by concatenating `'Experience: '`, the `experience_years` variable (converted to a string), and `' years'`. Print the result to the terminal.
+
+## Step 13
+
+Concatenating many strings using `+` and converting numbers using `str()` can get messy and hard to read.
+
+Python 3.6 introduced f-strings to solve this. By adding the letter `f` before the opening quote, you can put variables and expressions inside replacement fields represented by curly braces `{}`.
+
+For example:
+
+### Example Code
+
+```python
+name = 'John'
+print(f'Hello {name}')  # Output: Hello John
+```
+
+Create a variable `employee_card` and assign it an f-string that displays `Employee:` followed by a space and the value of the `full_name` variable.
