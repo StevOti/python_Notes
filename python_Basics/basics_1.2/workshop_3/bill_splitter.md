@@ -62,3 +62,10 @@ tax = total * 0.10
 Create a variable named `tip` and assign it the result of multiplying `running_total` by `0.25`.
 
 Finally, use `print()` to display the string `Tip amount:` followed by a space and the value of your `tip` variable.
+
+## Step 6
+Now that you have calculated the tip, you need to add it to your `running_total` to find the final bill amount.
+
+In Python, you can use the augmented assignment operator `+=` to add a value to a variable and update that variable at the same time. For example, `total += 5` is a shorthand way of writing `total = total + 5`.
+
+Use the `+=` operator to add the value of `tip` to your `running_total`. Finally, use `print()` to display the string `Total with tip:` followed by a space and the value of `running_total`.
