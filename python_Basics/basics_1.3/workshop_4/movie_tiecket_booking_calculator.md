@@ -109,3 +109,8 @@ Update the condition of the `if is_member:` line by using the `and` operator to 
 Now change the value of the `is_member` variable to `False` as the user is not a member.
 
 After that, you will see that the `discount` value now remains `0`, because both conditions must be satisfied for the discount to apply.
+
+## Step 12
+Now create a variable named `extra_charges` and set it to `0`. This will represent extra charges to apply to the movie ticket on weekends.
+
+Then, create an `if` statement to check if `is_weekend` is truthy. Inside the body of `if` statement, update the `extra_charges` value to `2` and print `Extra charges will be applied` in the terminal.
