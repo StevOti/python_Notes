@@ -192,3 +192,12 @@ else:
 Still inside the body of the outer `if` statement, add an `elif` clause between the `if seat_type == 'Premium':` and `else:` lines and check if `seat_type` is equal to `Gold`. Inside the body of the `elif` clause, update the value of `service_charges` to `3`.
 
 Below the nested `if...elif...else` statement, use the `print()` call to display a message that shows `Service charges:` followed by the updated value of `service_charges`. Then, check the output in the terminal.
+
+## Step 21
+In this final step, you will calculate the final price of the movie ticket using the values calculated in the previous steps.
+
+The final ticket price is calculated by adding the extra charges and service charges to the base price, and then subtracting the discount.
+
+Inside the body of the last `if` statement, below the `print('Service charges:', service_charges)` line, calculate the final price of the ticket and store it in a variable named `final_price`.
+
+Finally, print a message that shows `Final price of ticket:` followed by the value of `final_price`.
