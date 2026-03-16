@@ -74,3 +74,9 @@ print(subject, type(subject))  # Output: Python <class 'str'>
 Print both `is_student` and `type(is_student)` on the same line using a comma `,` as shown in the example.
 
 Then, check the output in the terminal that shows the value of `is_student` and its type as `bool`.
+
+## Step 6
+
+The student name should follow the same format as the other details.
+
+Remove the earlier outputs of the `name` variable. Then, print `name` and `type(name)` together on one line separated by a comma, like the previous step.
