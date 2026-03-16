@@ -69,3 +69,16 @@ Now that you have calculated the tip, you need to add it to your `running_total`
 In Python, you can use the augmented assignment operator `+=` to add a value to a variable and update that variable at the same time. For example, `total += 5` is a shorthand way of writing `total = total + 5`.
 
 Use the `+=` operator to add the value of `tip` to your `running_total`. Finally, use `print()` to display the string `Total with tip:` followed by a space and the value of `running_total`.
+
+## Step 7
+With the tip now included, you have the final amount for the entire group. You have to determine how much each person owes by dividing the total bill by the number of friends.
+
+In Python, you use the forward slash `/` to perform division. For example:
+
+```python
+half = 10 / 2
+```
+
+Create a variable named `final_bill` and assign it the result of dividing `running_total` by `num_of_friends`.
+
+Finally, use the `print()` function to display the string `Bill per person:` followed by a space and the value of `final_bill`.
