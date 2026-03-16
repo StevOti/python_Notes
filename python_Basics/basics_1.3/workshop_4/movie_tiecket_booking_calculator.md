@@ -173,3 +173,6 @@ Now you will calculate service charges based on the type of seat the user has se
 Inside the body of the last `if` statement, below the `print('Ticket booking condition satisfied')` line, create a variable named `service_charges` and set it to `0`. Make sure to indent your code by four spaces to keep it inside the outer `if` statement body.
 
 Then, create a nested `if` statement to check if `seat_type` is equal to `Premium`. Inside the body of the nested `if` statement, update the `service_charges` value to `5`.
+
+## Step 19
+Still inside the body of the outer `if` statement, add an `else` clause to the nested `if seat_type == 'Premium':` statement and update the `service_charges` value to `1` inside the `else` body. Make sure to keep the `else` indented by four spaces to stay inside the outer `if` statement body.
