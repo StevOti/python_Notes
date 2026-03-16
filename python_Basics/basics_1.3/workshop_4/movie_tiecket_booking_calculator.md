@@ -92,3 +92,15 @@ print('Total:', total)
 ```
 
 You also want to display the updated value of `discount`. Below the `if...else` statement, use the `print()` call to display a message that shows `Discount:` followed by the updated value of `discount`. Then, check the output in the terminal.
+
+## Step 10
+In Python, the `and` operator is used to check if multiple conditions are true. Here's how you can use it to combine two conditions in an `if` statement:
+
+```python
+if condition1 and condition2:
+	# Code to execute if all conditions are True
+```
+
+The membership discount should only apply to members if their age is greater than or equal to `21`.
+
+Update the condition of the `if is_member:` line by using the `and` operator to combine the existing condition with another condition checking if `age` is greater than or equal to `21`.
