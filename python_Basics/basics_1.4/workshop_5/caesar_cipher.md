@@ -181,3 +181,8 @@ print(greet()) # Hello Polly
 ```
 
 Add a third parameter named `encrypt` to your function and give it a default value of `True`.
+
+## Step 22
+You are going to use the parameter added in the previous step to determine if the function should encrypt the text passed to it (default behavior, `encrypt=True`), or if it should decrypt an encrypted message.
+
+Create an `if` statement that checks if `encrypt` is not truthy. Within the new `if` statement, set `shift` to `-shift`. This is necessary to enable the shift to take place in the opposite direction with respect to the encryption process.
