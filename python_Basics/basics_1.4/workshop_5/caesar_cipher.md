@@ -107,3 +107,13 @@ Now, test the `caesar` function by calling it with the string `freeCodeCamp` and
 
 ## Step 13
 Now your code is reusable. However, the `caesar` function prints a message on the terminal and gives back `None` by default. To prove it, print `encrypted_text` at the end of your code.
+
+## Step 14
+In previous lessons, you learned that the `return` statement is used to return a value from a function, so that you can use it elsewhere in your code:
+
+```python
+def spam():
+	return 'Spam!'
+```
+
+Remove the `print(encrypted_text)` call from your function. Then, delete the declaration of the `encrypted_text` variable and return directly `text.translate(translation_table)` from your function.
