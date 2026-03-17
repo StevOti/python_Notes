@@ -193,3 +193,6 @@ Declare two functions named `encrypt` and `decrypt`, both with `text` and `shift
 You'll use `encrypt` for the encryption process, and `decrypt` for the decryption, labeling the two actions with a descriptive name.
 
 Return a `caesar` call passing in `text` and `shift` from both your new functions, but make sure to pass in also `False` as the third argument for the `decrypt` function.
+
+## Step 24
+It's time to test the `encrypt` function. Using the same arguments, replace your `caesar` call with a call to `encrypt`. You'll see the same output on the terminal.
