@@ -117,3 +117,15 @@ def spam():
 ```
 
 Remove the `print(encrypted_text)` call from your function. Then, delete the declaration of the `encrypted_text` variable and return directly `text.translate(translation_table)` from your function.
+
+## Step 15
+You might have noticed that, although the message is encrypted, the uppercase characters have been left untouched. This happens because the translation table does not include uppercase letters.
+
+To fix it, you'll need to modify the strings passed to your `str.maketrans()` call using the `upper()` method:
+
+```python
+greet = "Hello"
+print(greet.upper())  # HELLO
+```
+
+Update your `str.maketrans()` call by concatenating to each argument the uppercase version of the argument itself.
