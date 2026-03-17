@@ -159,3 +159,6 @@ print(not False) # True
 ```
 
 Use the `not` operator to fix the condition of the `if` statement so that your function returns `Shift must be an integer value.` when `shift` is not an integer.
+
+## Step 19
+A negative or null shift should not be accepted by your function. Therefore, after your first `if` statement, create another `if` statement that checks if `shift` is less than `1` and returns the string `Shift must be a positive integer`.
