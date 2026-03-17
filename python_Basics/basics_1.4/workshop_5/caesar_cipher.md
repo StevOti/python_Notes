@@ -149,3 +149,13 @@ print(isinstance(42, int)) # True
 ```
 
 Replace the current condition of your `if` statement with an `isinstance()` call. Pass in `shift` as the first argument, and `int` as the second argument.
+
+## Step 18
+As you recall from previous lessons, the `not` operator is a unary logical operator that negates an expression:
+
+```python
+print(not True) # False
+print(not False) # True
+```
+
+Use the `not` operator to fix the condition of the `if` statement so that your function returns `Shift must be an integer value.` when `shift` is not an integer.
