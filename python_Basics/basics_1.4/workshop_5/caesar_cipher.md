@@ -101,3 +101,6 @@ def sum(num1, num2):
 ```
 
 The message to encrypt and the shift are still hardcoded in your function. Give your function two parameters named `text` and `shift`, and delete the declarations of both the `text` and `shift` variables from the `caesar` function body.
+
+## Step 12
+Now, test the `caesar` function by calling it with the string `freeCodeCamp` and the number `3` as the arguments. Assign the function call to a variable named `encrypted_text`.
