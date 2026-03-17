@@ -60,3 +60,6 @@ print(table)  # {97: 65, 98: 66, 99: 67}
 ```
 
 You'll learn more about the type of structure returned by `str.maketrans()` later on in the curriculum. For now, create a translation table that maps the characters in `alphabet` to the characters in `shifted_alphabet` and assign it to a variable named `translation_table`.
+
+## Step 7
+Declare a new variable named `text` and assign it the string `hello world`. This will be the message to encrypt.
