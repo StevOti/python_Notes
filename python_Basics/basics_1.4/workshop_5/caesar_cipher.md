@@ -186,3 +186,10 @@ Add a third parameter named `encrypt` to your function and give it a default val
 You are going to use the parameter added in the previous step to determine if the function should encrypt the text passed to it (default behavior, `encrypt=True`), or if it should decrypt an encrypted message.
 
 Create an `if` statement that checks if `encrypt` is not truthy. Within the new `if` statement, set `shift` to `-shift`. This is necessary to enable the shift to take place in the opposite direction with respect to the encryption process.
+
+## Step 23
+Declare two functions named `encrypt` and `decrypt`, both with `text` and `shift` parameters.
+
+You'll use `encrypt` for the encryption process, and `decrypt` for the decryption, labeling the two actions with a descriptive name.
+
+Return a `caesar` call passing in `text` and `shift` from both your new functions, but make sure to pass in also `False` as the third argument for the `decrypt` function.
