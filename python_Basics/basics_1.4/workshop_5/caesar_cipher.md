@@ -104,3 +104,6 @@ The message to encrypt and the shift are still hardcoded in your function. Give 
 
 ## Step 12
 Now, test the `caesar` function by calling it with the string `freeCodeCamp` and the number `3` as the arguments. Assign the function call to a variable named `encrypted_text`.
+
+## Step 13
+Now your code is reusable. However, the `caesar` function prints a message on the terminal and gives back `None` by default. To prove it, print `encrypted_text` at the end of your code.
