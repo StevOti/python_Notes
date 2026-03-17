@@ -30,3 +30,17 @@ print(fcc[8:])  # Camp
 ```
 
 Create a variable named `shifted_alphabet` and use the slicing syntax to assign it the portion of `alphabet` that starts at the index of `shift`. Then, call the built-in `print()` function to print `shifted_alphabet` on the terminal and look at the result.
+
+## Step 4
+As you can see from the output, the shifted alphabet starts at the letter `f` because `shift` has the value `5`. But now the first five letters of the alphabet – `a`, `b`, `c`, `d` and `e` – are missing from the shifted alphabet, so you'll need to add them at the end of the shifted alphabet.
+
+The `+` operator is used to combine two or more strings together in a process called concatenation like this:
+
+```python
+greeting = 'Hello' + ' ' + 'World'
+print(greeting)  # Hello World
+```
+
+Modify the existing assignment of the `shifted_alphabet` variable: use the slicing syntax to extract the missing first portion of `alphabet` and concatenate it to `alphabet[shift:]`.
+
+As a reminder, `sentence[start:stop]` returns the characters of `sentence` from position `start` (included) to `stop` (excluded).
