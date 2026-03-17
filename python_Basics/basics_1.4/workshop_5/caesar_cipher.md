@@ -196,3 +196,10 @@ Return a `caesar` call passing in `text` and `shift` from both your new function
 
 ## Step 24
 It's time to test the `encrypt` function. Using the same arguments, replace your `caesar` call with a call to `encrypt`. You'll see the same output on the terminal.
+
+## Step 25
+Now you're going to test the `decrypt` function. Replace the value assigned to `encrypted_text` with the following string, which represents a message to decrypt: `Pbhentr vf sbhaq va hayvxryl cynprf`.
+
+Then, declare a variable named `decrypted_text` and assign it a call to `decrypt` with `encrypted_text` as it first argument and a shift of `13` as the second argument.
+
+Finally, print the `decrypted_text` on the terminal. With that, the Caesar cipher is complete.
