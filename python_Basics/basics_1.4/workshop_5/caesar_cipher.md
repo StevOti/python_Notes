@@ -129,3 +129,13 @@ print(greet.upper())  # HELLO
 ```
 
 Update your `str.maketrans()` call by concatenating to each argument the uppercase version of the argument itself.
+
+## Step 16
+Now that you've implemented the basic functionalities of the cipher, it's time to add some validation. For that, you'll need an `if` statement. Here's a reminder of the syntax for an `if` statement:
+
+```python
+if condition:
+	# code to run when condition is true
+```
+
+At the beginning of your function body, create an `if` statement. For now, use `True` as the condition, and within the `if` statement body return the string `Shift must be an integer value`.
