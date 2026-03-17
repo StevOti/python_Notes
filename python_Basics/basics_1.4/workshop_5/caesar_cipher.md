@@ -79,3 +79,15 @@ Call the `translate()` method on `text` passing in the `translation_table` as th
 
 ## Step 9
 Now print `encrypted_text` to see the output in the terminal.
+
+## Step 10
+As you can see from the output, the message has been encrypted. The next step will be making your code reusable in case you wanted to encrypt different messages.
+
+For that, you'll need to create a function. As a reminder, here's how to create a function named `spam` that prints `Spam!` on the terminal:
+
+```python
+def spam():
+	print('Spam!')
+```
+
+Create a function named `caesar`. Put all your existing code within the function body. Pay attention to keep the same indentation level for all of the lines within the function body.
