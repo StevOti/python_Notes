@@ -139,3 +139,13 @@ if condition:
 ```
 
 At the beginning of your function body, create an `if` statement. For now, use `True` as the condition, and within the `if` statement body return the string `Shift must be an integer value`.
+
+## Step 17
+The `isinstance()` function returns `True` if its first argument is an instance of the second argument, and `False` otherwise:
+
+```python
+print(isinstance('Hello World', str)) # True
+print(isinstance(42, int)) # True
+```
+
+Replace the current condition of your `if` statement with an `isinstance()` call. Pass in `shift` as the first argument, and `int` as the second argument.
