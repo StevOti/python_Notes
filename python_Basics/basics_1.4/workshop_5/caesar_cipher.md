@@ -76,3 +76,6 @@ print(sentence.translate(t))
 ```
 
 Call the `translate()` method on `text` passing in the `translation_table` as the argument and assign the result to a variable named `encrypted_text`.
+
+## Step 9
+Now print `encrypted_text` to see the output in the terminal.
