@@ -62,3 +62,8 @@ In the last line of the loop, update the `print` call so that it prints the word
 
 ## Step 9
 The `len` function gives the length of a string. Update the second `print` call to print the length of that word.
+
+## Step 10
+The length returned from `len` is an integer, you need to convert it to a string using the `str` function to be able to add it to the `secret_code` string.
+
+Update the `print` call to print the length as a string.
