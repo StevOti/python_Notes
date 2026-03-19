@@ -94,3 +94,8 @@ Add two more poems in the global scope, `poem2 = 'The grass is green\nhere and t
 
 ## Step 17
 Update the function argument to be `poems`, then create a `for` loop around all the current content of the function that iterates over `poems` and uses `poem` as loop variable.
+
+## Step 18
+Before the loop, create a new variable `secret_codes` that has a starting value of an empty list.
+
+Then replace the `return secret_code` line with a line that appends `secret_code` to the `secret_codes` list.
