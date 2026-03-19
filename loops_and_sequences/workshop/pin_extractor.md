@@ -70,3 +70,6 @@ Update the `print` call to print the length as a string.
 
 ## Step 11
 Now you can concatenate `str(len(words[line_index]))` to `secret_code`. Remove the `print` call and use the augmented assignment `+=` for concatenation.
+
+## Step 12
+Remove the two `print` calls and add a `return` statement that returns `secret_code` on the last line in the function.
