@@ -59,3 +59,6 @@ Also, update the `print` call to `print(line_index, line)`.
 
 ## Step 8
 In the last line of the loop, update the `print` call so that it prints the word inside the `words` list at index `line_index`.
+
+## Step 9
+The `len` function gives the length of a string. Update the second `print` call to print the length of that word.
