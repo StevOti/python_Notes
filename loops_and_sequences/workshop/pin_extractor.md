@@ -73,3 +73,6 @@ Now you can concatenate `str(len(words[line_index]))` to `secret_code`. Remove t
 
 ## Step 12
 Remove the two `print` calls and add a `return` statement that returns `secret_code` on the last line in the function.
+
+## Step 13
+Pass `pin_extractor(poem)` to the `print` function so you can see what the function is returning.
