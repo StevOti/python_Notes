@@ -91,3 +91,6 @@ Add an `else` clause that concatenates a `'0'` to `secret_code` when there are n
 Now the pin extractor works, but it could be more efficient! It could extract the pin from many poems at the same time!
 
 Add two more poems in the global scope, `poem2 = 'The grass is green\nhere and there\nhoping for rain\nbefore it turns yellow'` and `poem3 = 'There\nonce\nwas\na\ndragon'`, and for now, comment out the `print` with the call to `pin_extractor`.
+
+## Step 17
+Update the function argument to be `poems`, then create a `for` loop around all the current content of the function that iterates over `poems` and uses `poem` as loop variable.
