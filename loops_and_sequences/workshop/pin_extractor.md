@@ -99,3 +99,8 @@ Update the function argument to be `poems`, then create a `for` loop around all 
 Before the loop, create a new variable `secret_codes` that has a starting value of an empty list.
 
 Then replace the `return secret_code` line with a line that appends `secret_code` to the `secret_codes` list.
+
+## Step 19
+Finally, return `secret_codes`, then uncomment the function call and update the argument to be `[poem, poem2, poem3]`. Now your function works with multiple poems at once, and can extract multiple pins!
+
+The `pin_extractor` function is completed.
