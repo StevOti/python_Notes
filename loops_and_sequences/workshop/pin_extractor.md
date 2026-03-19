@@ -36,3 +36,23 @@ The nth digit of the pin is hidden as the length of the nth word in the nth line
 To find the length of the nth word, the next step is to separate the line of the poem into a list of words: inside the loop, create a variable `words` and assign to it the value of `line` split into words using the `split` method.
 
 Then, add a `print` call with `words` as its argument.
+
+## Step 7
+As you learned in a previous lesson, the `enumerate` function allows to keep track of the index while looping over an iterable:
+
+```python
+fruits = ['apple', 'plum', 'bananas']
+
+for index, item in enumerate(fruits):
+	print(index, item)
+
+# 0 apple
+# 1 plum
+# 2 bananas
+```
+
+The nth digit of the secret code comes from the nth word of the nth line, so you need to know what is the number of each line.
+
+Change the loop so that it iterates on `enumerate(lines)`, and add another loop variable before `line` named `line_index`.
+
+Also, update the `print` call to `print(line_index, line)`.
