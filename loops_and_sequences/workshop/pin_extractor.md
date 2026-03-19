@@ -56,3 +56,6 @@ The nth digit of the secret code comes from the nth word of the nth line, so you
 Change the loop so that it iterates on `enumerate(lines)`, and add another loop variable before `line` named `line_index`.
 
 Also, update the `print` call to `print(line_index, line)`.
+
+## Step 8
+In the last line of the loop, update the `print` call so that it prints the word inside the `words` list at index `line_index`.
