@@ -76,3 +76,8 @@ Remove the two `print` calls and add a `return` statement that returns `secret_c
 
 ## Step 13
 Pass `pin_extractor(poem)` to the `print` function so you can see what the function is returning.
+
+## Step 14
+Now the function is doing a good job in extracting the code from the poem, but there is an edge case to consider: the line of the poem could be shorter than expected, and that would make the function error out (you can try this removing the word `bright` from the poem).
+
+Put the line `secret_code += str(len(words[line_index]))` in an `if` statement that checks that there are enough words in the `words` list.
