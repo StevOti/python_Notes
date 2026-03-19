@@ -29,3 +29,10 @@ There is a digit of the pin hidden in every line, so inside the function use the
 
 ## Step 5
 You need to work on each line independently: create a loop over `lines` that uses `line` as loop variable. Inside the loop, `print(line)`.
+
+## Step 6
+The nth digit of the pin is hidden as the length of the nth word in the nth line.
+
+To find the length of the nth word, the next step is to separate the line of the poem into a list of words: inside the loop, create a variable `words` and assign to it the value of `line` split into words using the `split` method.
+
+Then, add a `print` call with `words` as its argument.
