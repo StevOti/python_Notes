@@ -26,3 +26,6 @@ And then, call the function with the `poem` variable as argument.
 Now that you have added a function call you can see any error created inside the function in the terminal, and you can always use `print` to see the value of things.
 
 There is a digit of the pin hidden in every line, so inside the function use the `split` method to divide the string in a list of lines. Split the lines on the newline character (`\n`), and assign the resulting list to a variable called `lines`.
+
+## Step 5
+You need to work on each line independently: create a loop over `lines` that uses `line` as loop variable. Inside the loop, `print(line)`.
