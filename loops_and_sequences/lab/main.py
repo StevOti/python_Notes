@@ -6,7 +6,7 @@ def number_pattern(n):
         return 'Argument must be an integer greater than 0.'
 
     numbers = []
-    for value in range(1, n + 1):
-        numbers.append(str(value))
+    for num in range(1, n + 1):
+        numbers.append(str(num))
 
     return ' '.join(numbers)
