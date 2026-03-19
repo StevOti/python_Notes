@@ -67,3 +67,6 @@ The `len` function gives the length of a string. Update the second `print` call 
 The length returned from `len` is an integer, you need to convert it to a string using the `str` function to be able to add it to the `secret_code` string.
 
 Update the `print` call to print the length as a string.
+
+## Step 11
+Now you can concatenate `str(len(words[line_index]))` to `secret_code`. Remove the `print` call and use the augmented assignment `+=` for concatenation.
