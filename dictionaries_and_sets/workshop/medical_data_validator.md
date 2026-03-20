@@ -215,3 +215,31 @@ def validate(data):
 ```
 
 **What you're doing:** You're completing the validation flow with a success path. If no invalid records were found, the function prints `Valid format.` and returns `True`, clearly indicating that the dataset passed all current validation rules.
+
+## Step 12: Call `validate()` with `medical_records`
+
+At the bottom of your code, call the `validate` function with `medical_records` as the argument. You should see `Valid format.` printed to the terminal.
+
+```python
+def validate(data):
+    is_sequence = isinstance(data, (list, tuple))
+    if not is_sequence:
+        print("Invalid format: expected a list or tuple.")
+        return False
+    is_invalid = False
+
+    for index, dictionary in enumerate(data):
+        if not isinstance(dictionary, dict):
+            print(f"Invalid format: expected a dictionary at position {index}.")
+            is_invalid = True
+
+    if is_invalid:
+        return False
+
+    print("Valid format.")
+    return True
+
+validate(medical_records)
+```
+
+**What you're doing:** You're executing your validation logic by calling `validate(medical_records)` after the function definition. Since `medical_records` contains valid dictionary records at this point, the function reaches the success path and prints `Valid format.`.
