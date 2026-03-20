@@ -455,3 +455,67 @@ validate(medical_records)
 ```
 
 **What you're doing:** You're defining a single source of truth for valid dictionary keys. By storing required field names in `key_set`, you'll be able to compare each record's keys against this expected set in the next steps and catch extra, missing, or misspelled keys.
+
+## Step 18: Validate Dictionary Keys with `keys()` and `set()`
+
+The `keys()` method returns a view object containing all the keys from a dictionary:
+
+**Example Code**
+
+```python
+person = {
+   'name': 'John',
+   'age': 33
+}
+
+print(person.keys()) # dict_keys(['name, 'age'])
+```
+
+Inside your `for` loop, after the first `if` statement, create an `if` statement that runs when the set of keys from the current dictionary is different from `key_set`. This is to ensure that no missing or invalid keys are present in the dictionary.
+
+Within the new `if` statement, print `Invalid format: <dictionary> at position <index> has missing and/or invalid keys.` (where `<dictionary>` and `<index>` should be replaced by the dictionary and index at the current iteration) and set `is_invalid` to `True`.
+
+```python
+def validate(data):
+    is_sequence = isinstance(data, (list, tuple))
+    if not is_sequence:
+        print("Invalid format: expected a list or tuple.")
+        return False
+    is_invalid = False
+    key_set = set(['patient_id', 'age', 'gender', 'diagnosis', 'medications', 'last_visit_id'])
+
+    for index, dictionary in enumerate(data):
+        if not isinstance(dictionary, dict):
+            print(f"Invalid format: expected a dictionary at position {index}.")
+            is_invalid = True
+        if isinstance(dictionary, dict) and set(dictionary.keys()) != key_set:
+            print(f"Invalid format: {dictionary} at position {index} has missing and/or invalid keys.")
+            is_invalid = True
+
+    if is_invalid:
+        return False
+
+    print("Valid format.")
+    return True
+
+medical_records = [
+    {
+        'patient_id': 'P1001',
+        'age': 34,
+        'gender': 'Female',
+        'diagnosis': 'Hypertension',
+        'medications': ['Lisinopril'],
+        'last_visit_id': 'V2301'
+    }
+]
+
+medical_records.append("invalid record")
+medical_records.append(404)
+
+medical_records.pop()
+medical_records.pop()
+
+validate(medical_records)
+```
+
+**What you're doing:** You're adding structural validation for each record by comparing its keys to `key_set`. If any dictionary has missing, extra, or misspelled fields, the function prints a detailed message with the record content and position, and marks the overall dataset as invalid.
