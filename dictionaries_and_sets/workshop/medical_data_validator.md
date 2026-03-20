@@ -353,3 +353,48 @@ validate(medical_records)
 ```
 
 **What you're doing:** You're intentionally adding two invalid items that are not dictionaries, so the loop-level type check fails twice. The function prints one message per invalid position, which confirms your second validation condition is working correctly.
+
+## Step 16: Remove the Last Two Invalid Items
+
+Now that you tested the validation for this part, remove the last two items from the `medical_records` list.
+
+```python
+def validate(data):
+    is_sequence = isinstance(data, (list, tuple))
+    if not is_sequence:
+        print("Invalid format: expected a list or tuple.")
+        return False
+    is_invalid = False
+
+    for index, dictionary in enumerate(data):
+        if not isinstance(dictionary, dict):
+            print(f"Invalid format: expected a dictionary at position {index}.")
+            is_invalid = True
+
+    if is_invalid:
+        return False
+
+    print("Valid format.")
+    return True
+
+medical_records = [
+    {
+        'patient_id': 'P1001',
+        'age': 34,
+        'gender': 'Female',
+        'diagnosis': 'Hypertension',
+        'medications': ['Lisinopril'],
+        'last_visit_id': 'V2301'
+    }
+]
+
+medical_records.append("invalid record")
+medical_records.append(404)
+
+medical_records.pop()
+medical_records.pop()
+
+validate(medical_records)
+```
+
+**What you're doing:** You're cleaning up the test data by removing the two non-dictionary values that were intentionally appended. After popping them off, `medical_records` is back to a valid list of dictionaries for the next steps.
