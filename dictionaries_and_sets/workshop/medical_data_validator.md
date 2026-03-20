@@ -311,3 +311,45 @@ validate(medical_records)
 ```
 
 **What you're doing:** You're restoring `medical_records` to a valid sequence type (a list) where each item is a dictionary. This satisfies your current validation rules again, so the function can print `Valid format.`.
+
+## Step 15: Test the Dictionary Check with Invalid Items
+
+To test the second conditional statement, add two items of your choice that are not dictionaries at the end of the `medical_records` list. You should see two validation messages printed to the terminal.
+
+```python
+def validate(data):
+    is_sequence = isinstance(data, (list, tuple))
+    if not is_sequence:
+        print("Invalid format: expected a list or tuple.")
+        return False
+    is_invalid = False
+
+    for index, dictionary in enumerate(data):
+        if not isinstance(dictionary, dict):
+            print(f"Invalid format: expected a dictionary at position {index}.")
+            is_invalid = True
+
+    if is_invalid:
+        return False
+
+    print("Valid format.")
+    return True
+
+medical_records = [
+    {
+        'patient_id': 'P1001',
+        'age': 34,
+        'gender': 'Female',
+        'diagnosis': 'Hypertension',
+        'medications': ['Lisinopril'],
+        'last_visit_id': 'V2301'
+    }
+]
+
+medical_records.append("invalid record")
+medical_records.append(404)
+
+validate(medical_records)
+```
+
+**What you're doing:** You're intentionally adding two invalid items that are not dictionaries, so the loop-level type check fails twice. The function prints one message per invalid position, which confirms your second validation condition is working correctly.
