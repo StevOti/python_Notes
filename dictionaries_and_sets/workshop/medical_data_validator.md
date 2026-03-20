@@ -166,3 +166,26 @@ def validate(data):
 ```
 
 **What you're doing:** You're adding item-level validation to make sure every element in `data` is a dictionary. If a non-dictionary item appears, the function reports exactly where it happened using the current `index` and flips `is_invalid` to `True` so you can handle invalid data after the loop.
+
+## Step 10: Return `False` If Invalid Data Was Found
+
+After your `for` loop, still inside the `validate` function, create an `if` statement. If `is_invalid` is `True`, return `False`.
+
+```python
+def validate(data):
+    is_sequence = isinstance(data, (list, tuple))
+    if not is_sequence:
+        print("Invalid format: expected a list or tuple.")
+        return False
+    is_invalid = False
+
+    for index, dictionary in enumerate(data):
+        if not isinstance(dictionary, dict):
+            print(f"Invalid format: expected a dictionary at position {index}.")
+            is_invalid = True
+
+    if is_invalid:
+        return False
+```
+
+**What you're doing:** You're adding a final check after iterating through all records. If any invalid item was detected during the loop, `is_invalid` will be `True`, and the function returns `False` to signal failed validation.
