@@ -66,3 +66,18 @@ medical_records.append({
 ```
 
 **What you're doing:** You're creating a comprehensive patient record dictionary that includes not just demographic information but also medical details. Notice that the `medications` value is a list, which allows storing multiple medications for a single patient. This demonstrates how dictionaries can contain various data types, including lists, making them flexible for representing complex data structures.
+
+## Step 5: Create a Validate Function with Type Checking
+
+Following the same structure you used in the previous steps, the `medical_records` list has been filled up for you with other patients' data. Feel free to take a look at it.
+
+Next you'll start to write the function to validate the data set. Create a function named `validate` with a single parameter `data`.
+
+You want to ensure that your data is either a list or a tuple. Therefore, within the `validate` function, declare a variable named `is_sequence` and assign it a call to `isinstance`. Pass in `data` as the first argument and a tuple containing `list` and `tuple` as the second argument.
+
+```python
+def validate(data):
+    is_sequence = isinstance(data, (list, tuple))
+```
+
+**What you're doing:** You're creating the foundation of a validation function that will check whether the input is a sequence type (list or tuple). The `isinstance()` function checks if an object is an instance of a class or tuple of classes. By passing `(list, tuple)` as the second argument, you're allowing the function to accept either lists or tuples as valid input. This variable will be used in subsequent steps to determine whether validation should proceed.
