@@ -78,6 +78,17 @@ You want to ensure that your data is either a list or a tuple. Therefore, within
 ```python
 def validate(data):
     is_sequence = isinstance(data, (list, tuple))
+```
+
+**What you're doing:** You're creating the foundation of a validation function that will check whether the input is a sequence type (list or tuple). The `isinstance()` function checks if an object is an instance of a class or tuple of classes. By passing `(list, tuple)` as the second argument, you're allowing the function to accept either lists or tuples as valid input. This variable will be used in subsequent steps to determine whether validation should proceed.
+
+## Step 6: Add Validation Check for Sequence Type
+
+Create an if statement. For its condition, use the `not` operator to negate `is_sequence`. Within the if statement, print `Invalid format: expected a list or tuple.` and return `False`.
+
+```python
+def validate(data):
+    is_sequence = isinstance(data, (list, tuple))
     if not is_sequence:
         print("Invalid format: expected a list or tuple.")
         return False
