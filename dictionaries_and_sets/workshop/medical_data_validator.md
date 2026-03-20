@@ -44,3 +44,25 @@ medical_records.append({'patient_id': 'P1001', 'age': 34, 'gender': 'Female'})
 ```
 
 **What you're doing:** You're expanding the patient dictionary to include multiple fields. Now the dictionary has three key-value pairs: `patient_id`, `age`, and `gender`. This demonstrates how dictionaries can store diverse types of data (strings, integers) in a single structure, making them ideal for representing complex objects like patient records.
+
+## Step 4: Complete the Dictionary with Diagnosis, Medications, and Last Visit ID
+
+Complete the dictionary by adding the following three key-value pairs:
+
+- A key `diagnosis` with the value `Hypertension`
+- A key `medications` with the value of the list `['Lisinopril']`
+- A key `last_visit_id` with the value `V2301`
+
+```python
+medical_records = []
+medical_records.append({
+    'patient_id': 'P1001',
+    'age': 34,
+    'gender': 'Female',
+    'diagnosis': 'Hypertension',
+    'medications': ['Lisinopril'],
+    'last_visit_id': 'V2301'
+})
+```
+
+**What you're doing:** You're creating a comprehensive patient record dictionary that includes not just demographic information but also medical details. Notice that the `medications` value is a list, which allows storing multiple medications for a single patient. This demonstrates how dictionaries can contain various data types, including lists, making them flexible for representing complex data structures.
