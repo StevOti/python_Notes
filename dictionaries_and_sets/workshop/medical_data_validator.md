@@ -272,3 +272,42 @@ validate(medical_records)
 ```
 
 **What you're doing:** You're intentionally passing invalid input to test your guard clause. Since `medical_records` is converted to a string, it is no longer a list or tuple, so the first validation check fails and the function prints `Invalid format: expected a list or tuple.`.
+
+## Step 14: Turn `medical_records` Back into a List/Tuple of Dictionaries
+
+Now turn `medical_records` back to a list/tuple of dictionaries.
+
+```python
+def validate(data):
+    is_sequence = isinstance(data, (list, tuple))
+    if not is_sequence:
+        print("Invalid format: expected a list or tuple.")
+        return False
+    is_invalid = False
+
+    for index, dictionary in enumerate(data):
+        if not isinstance(dictionary, dict):
+            print(f"Invalid format: expected a dictionary at position {index}.")
+            is_invalid = True
+
+    if is_invalid:
+        return False
+
+    print("Valid format.")
+    return True
+
+medical_records = [
+    {
+        'patient_id': 'P1001',
+        'age': 34,
+        'gender': 'Female',
+        'diagnosis': 'Hypertension',
+        'medications': ['Lisinopril'],
+        'last_visit_id': 'V2301'
+    }
+]
+
+validate(medical_records)
+```
+
+**What you're doing:** You're restoring `medical_records` to a valid sequence type (a list) where each item is a dictionary. This satisfies your current validation rules again, so the function can print `Valid format.`.
