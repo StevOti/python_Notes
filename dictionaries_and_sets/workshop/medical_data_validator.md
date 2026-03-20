@@ -189,3 +189,29 @@ def validate(data):
 ```
 
 **What you're doing:** You're adding a final check after iterating through all records. If any invalid item was detected during the loop, `is_invalid` will be `True`, and the function returns `False` to signal failed validation.
+
+## Step 11: Print Success Message and Return `True`
+
+After the `if` statement, print the string `Valid format.`. Then return `True`.
+
+```python
+def validate(data):
+    is_sequence = isinstance(data, (list, tuple))
+    if not is_sequence:
+        print("Invalid format: expected a list or tuple.")
+        return False
+    is_invalid = False
+
+    for index, dictionary in enumerate(data):
+        if not isinstance(dictionary, dict):
+            print(f"Invalid format: expected a dictionary at position {index}.")
+            is_invalid = True
+
+    if is_invalid:
+        return False
+
+    print("Valid format.")
+    return True
+```
+
+**What you're doing:** You're completing the validation flow with a success path. If no invalid records were found, the function prints `Valid format.` and returns `True`, clearly indicating that the dataset passed all current validation rules.
