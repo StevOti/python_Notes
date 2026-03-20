@@ -488,7 +488,7 @@ def validate(data):
         if not isinstance(dictionary, dict):
             print(f"Invalid format: expected a dictionary at position {index}.")
             is_invalid = True
-        if isinstance(dictionary, dict) and set(dictionary.keys()) != key_set:
+        if set(dictionary.keys()) != key_set:
             print(f"Invalid format: {dictionary} at position {index} has missing and/or invalid keys.")
             is_invalid = True
 
@@ -519,3 +519,54 @@ validate(medical_records)
 ```
 
 **What you're doing:** You're adding structural validation for each record by comparing its keys to `key_set`. If any dictionary has missing, extra, or misspelled fields, the function prints a detailed message with the record content and position, and marks the overall dataset as invalid.
+
+## Step 19: Test Missing-Key Validation by Commenting Out `age`
+
+To test that everything is working correctly, try to comment out the `age` key from the first dictionary in `medical_records`.
+
+You should see a validation message appear in the terminal.
+
+```python
+def validate(data):
+    is_sequence = isinstance(data, (list, tuple))
+    if not is_sequence:
+        print("Invalid format: expected a list or tuple.")
+        return False
+    is_invalid = False
+    key_set = set(['patient_id', 'age', 'gender', 'diagnosis', 'medications', 'last_visit_id'])
+
+    for index, dictionary in enumerate(data):
+        if not isinstance(dictionary, dict):
+            print(f"Invalid format: expected a dictionary at position {index}.")
+            is_invalid = True
+        if set(dictionary.keys()) != key_set:
+            print(f"Invalid format: {dictionary} at position {index} has missing and/or invalid keys.")
+            is_invalid = True
+
+    if is_invalid:
+        return False
+
+    print("Valid format.")
+    return True
+
+medical_records = [
+    {
+        'patient_id': 'P1001',
+        # 'age': 34,
+        'gender': 'Female',
+        'diagnosis': 'Hypertension',
+        'medications': ['Lisinopril'],
+        'last_visit_id': 'V2301'
+    }
+]
+
+medical_records.append("invalid record")
+medical_records.append(404)
+
+medical_records.pop()
+medical_records.pop()
+
+validate(medical_records)
+```
+
+**What you're doing:** You're intentionally removing a required field (`age`) from the first record to test the key-set comparison rule. Since the dictionary keys no longer match `key_set`, the function prints the missing/invalid keys validation message.
