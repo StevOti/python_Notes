@@ -95,3 +95,18 @@ def validate(data):
 ```
 
 **What you're doing:** You're adding error handling to the `validate()` function. The `if not is_sequence:` condition checks if the data is NOT a sequence type. If it's not valid, the function prints an error message and returns `False`, signaling that validation failed. This is the first validation rule: the input must be a list or tuple.
+
+## Step 7: Declare an Invalid Flag Variable
+
+Right after your if statement, declare a variable named `is_invalid` and set it to `False`. Later on, you'll use it as a flag to run a conditional statement.
+
+```python
+def validate(data):
+    is_sequence = isinstance(data, (list, tuple))
+    if not is_sequence:
+        print("Invalid format: expected a list or tuple.")
+        return False
+    is_invalid = False
+```
+
+**What you're doing:** You're creating a flag variable that will track whether any validation errors are found. By initializing it to `False`, you're starting with the assumption that the data is valid. As you add more validation checks in the following steps, you'll set this flag to `True` if any validation rule is violated.
