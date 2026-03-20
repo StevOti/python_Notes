@@ -110,3 +110,37 @@ def validate(data):
 ```
 
 **What you're doing:** You're creating a flag variable that will track whether any validation errors are found. By initializing it to `False`, you're starting with the assumption that the data is valid. As you add more validation checks in the following steps, you'll set this flag to `True` if any validation rule is violated.
+
+## Step 8: Loop Through Data with `enumerate()`
+
+As you learned in a previous lesson, the `enumerate` function allows to keep track of the index while looping over an iterable:
+
+**Example Code**
+
+```python
+person = {'name': 'John', 'age': 33}
+
+for index, item in enumerate(person):
+    print(index, item)
+
+# 0 name
+# 1 age
+```
+
+Create a `for` loop that iterates over `data`. Use the `enumerate` function to get both the index and the item in `data` at each iteration. Use `index` and `dictionary` as iteration variables.
+
+For now use `pass` to fill the loop body.
+
+```python
+def validate(data):
+    is_sequence = isinstance(data, (list, tuple))
+    if not is_sequence:
+        print("Invalid format: expected a list or tuple.")
+        return False
+    is_invalid = False
+
+    for index, dictionary in enumerate(data):
+        pass
+```
+
+**What you're doing:** You're setting up iteration over each patient record while keeping track of both the position (`index`) and the record itself (`dictionary`). Using `pass` keeps the loop syntactically complete for now, so you can add validation rules in the next steps.
