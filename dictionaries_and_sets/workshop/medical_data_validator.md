@@ -144,3 +144,25 @@ def validate(data):
 ```
 
 **What you're doing:** You're setting up iteration over each patient record while keeping track of both the position (`index`) and the record itself (`dictionary`). Using `pass` keeps the loop syntactically complete for now, so you can add validation rules in the next steps.
+
+## Step 9: Validate That Each Item Is a Dictionary
+
+You are checking if the data passed to your function is a list or a tuple. You still need to ensure that each item in the sequence is a dictionary.
+
+Inside your `for` loop, if the item in `dictionary` is not an instance of `dict`, print `Invalid format: expected a dictionary at position <index>.` (where `<index>` should be replaced by the current index) and set `is_invalid` to `True`.
+
+```python
+def validate(data):
+    is_sequence = isinstance(data, (list, tuple))
+    if not is_sequence:
+        print("Invalid format: expected a list or tuple.")
+        return False
+    is_invalid = False
+
+    for index, dictionary in enumerate(data):
+        if not isinstance(dictionary, dict):
+            print(f"Invalid format: expected a dictionary at position {index}.")
+            is_invalid = True
+```
+
+**What you're doing:** You're adding item-level validation to make sure every element in `data` is a dictionary. If a non-dictionary item appears, the function reports exactly where it happened using the current `index` and flips `is_invalid` to `True` so you can handle invalid data after the loop.
