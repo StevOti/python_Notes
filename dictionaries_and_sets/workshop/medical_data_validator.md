@@ -243,3 +243,32 @@ validate(medical_records)
 ```
 
 **What you're doing:** You're executing your validation logic by calling `validate(medical_records)` after the function definition. Since `medical_records` contains valid dictionary records at this point, the function reaches the success path and prints `Valid format.`.
+
+## Step 13: Test the First `if` Statement with Invalid Sequence Type
+
+To test the first `if` statement of your function, turn `medical_records` into a string. You should see `Invalid format: expected a list or tuple.` printed to the terminal.
+
+```python
+def validate(data):
+    is_sequence = isinstance(data, (list, tuple))
+    if not is_sequence:
+        print("Invalid format: expected a list or tuple.")
+        return False
+    is_invalid = False
+
+    for index, dictionary in enumerate(data):
+        if not isinstance(dictionary, dict):
+            print(f"Invalid format: expected a dictionary at position {index}.")
+            is_invalid = True
+
+    if is_invalid:
+        return False
+
+    print("Valid format.")
+    return True
+
+medical_records = str(medical_records)
+validate(medical_records)
+```
+
+**What you're doing:** You're intentionally passing invalid input to test your guard clause. Since `medical_records` is converted to a string, it is no longer a list or tuple, so the first validation check fails and the function prints `Invalid format: expected a list or tuple.`.
