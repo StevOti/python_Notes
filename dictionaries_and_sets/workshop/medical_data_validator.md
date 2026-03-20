@@ -33,3 +33,14 @@ medical_records.append({'patient_id': 'P1001'})
 ```
 
 **What you're doing:** You're creating a dictionary with a `patient_id` key and appending it to the `medical_records` list. This dictionary will serve as the first patient record. As you progress through this workshop, you'll add more fields to represent complete patient information.
+
+## Step 3: Add Age and Gender to the Patient Dictionary
+
+Add a key `age` with the value of the integer `34` and a key `gender` with the value of the string `Female` to your dictionary. Don't forget the comma between the key-value pairs.
+
+```python
+medical_records = []
+medical_records.append({'patient_id': 'P1001', 'age': 34, 'gender': 'Female'})
+```
+
+**What you're doing:** You're expanding the patient dictionary to include multiple fields. Now the dictionary has three key-value pairs: `patient_id`, `age`, and `gender`. This demonstrates how dictionaries can store diverse types of data (strings, integers) in a single structure, making them ideal for representing complex objects like patient records.
