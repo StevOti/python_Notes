@@ -230,3 +230,6 @@ print(re.fullmatch('Fahrenheit \\d+', book))
 ```
 
 Replace the `search` call with a `fullmatch` call keeping the same arguments.
+
+## Step 30
+Next, you want to verify that `age` is an integer. So add another key `age` to the `constraints` dictionary. For its value, call `isinstance` passing `age` and `int` as its arguments.
