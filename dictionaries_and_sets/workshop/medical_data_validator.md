@@ -140,3 +140,8 @@ print(sum(**nums)) # 7
 In the example above, `sum(**nums)` is equivalent to `sum(a=2, b=4, c=1)`.
 
 At the bottom of your code, print the result of calling the `find_invalid_records` function. For its arguments, use the `**` operator to unpack `medical_records[0]`.
+
+## Step 23
+The `constraints` dictionary will contain each key you should expect to have in the data to validate. The value associated to each of them will indicate the result of the validation.
+
+Add the key `patient_id` to the `constraints` dictionary. For its value, use a call to `isinstance` passing in `patient_id` and `str` as the arguments.
