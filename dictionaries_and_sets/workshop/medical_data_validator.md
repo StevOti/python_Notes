@@ -117,3 +117,6 @@ Within the new if statement, print `Invalid format: <dictionary> at position <in
 To test that everything is working correctly, comment out the `age` key from the first dictionary in `medical_records`.
 
 You should see a validation message appear in the terminal.
+
+## Step 20
+Now restore the line `'age': 34,`.
