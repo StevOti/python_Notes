@@ -287,8 +287,3 @@ On the right side of the `and` operator, use the `fullmatch` function from the `
 Now that your `constraints` dictionary is complete, you'll change the return statement of `find_invalid_records` to make it return a list of the invalid keys.
 
 Using the list comprehension syntax, return a list that evaluates `key` for each `key, value` in `constraints.items()`.
-
-## Step 38
-It's time to use another regular expression. Similarly to what you've already done, use the `and` operator to add an expression to the current value of `constraints['last_visit_id']`.
-
-On the right side of the `and` operator, use the `fullmatch` function from the `re` module to ensure that `last_visit_id` starts with the letter `v` (either lowercase or uppercase) followed by one or more digits.
