@@ -311,3 +311,18 @@ Then, assign it a call to `find_invalid_records` using the `**` operator to unpa
 If you pass invalid data to the `validate` function, for example a list containing non-dictionary elements or dictionaries with missing and/or invalid keys, Python will raise an `AttributeError` and a `TypeError`, respectively. Feel free to verify it by modifying the `medical_records` list.
 
 To avoid that, after setting `is_invalid` to `True`, use the `continue` keyword to skip to the next iteration in both your `if` statements.
+
+## Step 44
+Right after the `invalid_records` variable, create a `for` loop to iterate over it. For each invalid record, print `Unexpected format '<key>: <val>' at position <index>.`. Replace `<key>`, `<val>`, and `<index>` with the current key, value, and index.
+
+Remember that `invalid_records` is a list of keys that refer to invalid records in the current dictionary. You will need to take the key from `invalid_records` and look up the value in `dictionary`.
+
+Position or index refers to the current dictionary in `medical_records`, defined by the outer `for` loop in the function.
+
+Review your code so far if you need to remind yourself of the loops and variables already created.
+
+Then, set `is_invalid` to `True`.
+
+Feel free to test the `validate` function with invalid data to see the validation messages.
+
+With that, the medical validator workshop is complete.
