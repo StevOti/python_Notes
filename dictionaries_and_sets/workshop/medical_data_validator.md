@@ -261,3 +261,16 @@ print(roots) # [0.0, 1.0, 2.0, 3.0, 4.0, 5.0]
 Each item in the `medications` list should be a string. In this step and the next one you'll write an expression to check that. Use the `and` operator to add another expression to the value of the `medications` key.
 
 On the right side of the `and` operator, use the list comprehension syntax to create a list made by evaluating `isinstance(i, str)` for each `i` in `medications`.
+
+## Step 36
+The `all` function returns `True` if all the elements from the iterable passed to it are truthy, and `False` otherwise:
+
+```python
+truthy = [1, 2, 3]
+print(all(truthy)) # True
+
+falsy = [0, 1, 2, 3]
+print(all(falsy)) # False
+```
+
+Pass the list `[isinstance(i, str) for i in medications]` to the `all` function to ensure that every element in it is a string.
