@@ -244,3 +244,6 @@ Add another key `gender` to the `constraints` dictionary. Following the format o
 
 ## Step 33
 Now add a key `diagnosis` to the `constraints` dictionary. For its value, write an expression that checks that `diagnosis` is either an instance of `str` or is `None`.
+
+## Step 34
+Next, add a `medications` key to the `constraints` dictionary. For its value use `isinstance` to check that `medications` is a list.
