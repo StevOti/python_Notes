@@ -274,3 +274,6 @@ print(all(falsy)) # False
 ```
 
 Pass the list `[isinstance(i, str) for i in medications]` to the `all` function to ensure that every element in it is a string.
+
+## Step 37
+Add one last key `last_visit_id` to the `constraints` dictionary. For its value, use `isinstance` to verify that `last_visit_id` is a string.
