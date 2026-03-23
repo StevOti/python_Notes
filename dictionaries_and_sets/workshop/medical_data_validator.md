@@ -241,3 +241,6 @@ Using the `and` operator, add a second expression to the value of the `age` key 
 
 ## Step 32
 Add another key `gender` to the `constraints` dictionary. Following the format of the expression you wrote in the previous steps, verify that `gender` is a string. Then, use the `and` operator to check that the lowercase `gender` is in `('male', 'female')`.
+
+## Step 33
+Now add a key `diagnosis` to the `constraints` dictionary. For its value, write an expression that checks that `diagnosis` is either an instance of `str` or is `None`.
