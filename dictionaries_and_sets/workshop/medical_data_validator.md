@@ -213,3 +213,20 @@ print(re.search('\\d+', book))
 ```
 
 So append a `+` quantifier to your regex pattern to match one or more digits.
+
+## Step 29
+Now that your regex matches the letter `p` followed by one or more digits, one last thing you need to check is that no extra characters are found in the string.
+
+To do that you can make use of another function from the `re` module. The `fullmatch` function returns a match object when the regex pattern matches the entire string and `None` otherwise.
+
+```python
+import re
+
+book = "Fahrenheit 451"
+print(re.fullmatch('\\d+', book)) #None
+
+print(re.fullmatch('Fahrenheit \\d+', book))
+# <re.Match object; span=(0, 14), match='Fahrenheit 451'>
+```
+
+Replace the `search` call with a `fullmatch` call keeping the same arguments.
