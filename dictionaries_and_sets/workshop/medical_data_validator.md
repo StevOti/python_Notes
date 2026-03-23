@@ -238,3 +238,6 @@ Next, you want to verify that `age` is an integer. So add another key `age` to t
 `age` should not only be an integer, it should be a positive integer greater than or equal to `18`.
 
 Using the `and` operator, add a second expression to the value of the `age` key to check that.
+
+## Step 32
+Add another key `gender` to the `constraints` dictionary. Following the format of the expression you wrote in the previous steps, verify that `gender` is a string. Then, use the `and` operator to check that the lowercase `gender` is in `('male', 'female')`.
