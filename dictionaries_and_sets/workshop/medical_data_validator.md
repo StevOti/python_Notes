@@ -301,3 +301,8 @@ Since you want to return a list containing only invalid keys, add an `if` clause
 
 ## Step 41
 The `find_invalid_records` function is complete. Now, remove `print(find_invalid_records(**medical_records[0]))` from your code.
+
+## Step 42
+Going back to the `validate` function, after the two if statements and still inside the `for` loop, create a variable named `invalid_records`.
+
+Then, assign it a call to `find_invalid_records` using the `**` operator to unpack `dictionary`.
