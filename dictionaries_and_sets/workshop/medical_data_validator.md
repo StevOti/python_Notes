@@ -184,3 +184,16 @@ print(re.search('hello', greeting, re.IGNORECASE))
 Add `re.IGNORECASE` as the third argument to your `re.search` call. This will make your regex search case insensitive.
 
 After that, you'll see `None` replaced by the match object `<re.Match object; span=(0, 1), match='P'>`, where `match` indicates the match and `span` indicates its location in the string.
+
+## Step 27
+Regular expressions can contain special sequences consisting in a backslash (`\`) followed by a character. These sequences have a special meaning. For example, `\d` matches a decimal digit.
+
+```python
+import re
+
+book = "Fahrenheit 451"
+print(re.search('\\d', book))
+# <re.Match object; span=(11, 12), match='4'>
+```
+
+After the letter `p`, `patient_id` should have a series of numbers. So, modify your regex pattern to have the character `p` followed by the special sequence `\d`.
