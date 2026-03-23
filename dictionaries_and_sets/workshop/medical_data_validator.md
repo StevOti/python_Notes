@@ -145,3 +145,8 @@ At the bottom of your code, print the result of calling the `find_invalid_record
 The `constraints` dictionary will contain each key you should expect to have in the data to validate. The value associated to each of them will indicate the result of the validation.
 
 Add the key `patient_id` to the `constraints` dictionary. For its value, use a call to `isinstance` passing in `patient_id` and `str` as the arguments.
+
+## Step 24
+As you wrote in the previous step, `patient_id` should be a string. You want to check that it also has a specific pattern though.
+
+For that, you are going to use a regular expression. Therefore, at the top of your code, use the `import` keyword to import the `re` module.
