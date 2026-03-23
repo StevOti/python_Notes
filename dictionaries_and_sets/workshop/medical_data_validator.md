@@ -298,3 +298,6 @@ print(even_nums) # [2, 4, 6]
 ```
 
 Since you want to return a list containing only invalid keys, add an `if` clause to your comprehension so that each key is added to the list only when `value` is falsy.
+
+## Step 41
+The `find_invalid_records` function is complete. Now, remove `print(find_invalid_records(**medical_records[0]))` from your code.
