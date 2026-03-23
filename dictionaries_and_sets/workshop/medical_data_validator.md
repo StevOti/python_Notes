@@ -197,3 +197,19 @@ print(re.search('\\d', book))
 ```
 
 After the letter `p`, `patient_id` should have a series of numbers. So, modify your regex pattern to have the character `p` followed by the special sequence `\d`.
+
+## Step 28
+Quantifiers are used in regular expressions to specify how many times a character can be repeated. For example, the `+` character matches the previous character one or more times:
+
+```python
+import re
+
+book = "Fahrenheit 451"
+print(re.search('\\d', book))
+# <re.Match object; span=(11, 12), match='4'>
+
+print(re.search('\\d+', book))
+# <re.Match object; span=(11, 14), match='451'>
+```
+
+So append a `+` quantifier to your regex pattern to match one or more digits.
