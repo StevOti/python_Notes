@@ -233,3 +233,8 @@ Replace the `search` call with a `fullmatch` call keeping the same arguments.
 
 ## Step 30
 Next, you want to verify that `age` is an integer. So add another key `age` to the `constraints` dictionary. For its value, call `isinstance` passing `age` and `int` as its arguments.
+
+## Step 31
+`age` should not only be an integer, it should be a positive integer greater than or equal to `18`.
+
+Using the `and` operator, add a second expression to the value of the `age` key to check that.
