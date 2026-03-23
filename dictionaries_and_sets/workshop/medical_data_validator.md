@@ -306,3 +306,8 @@ The `find_invalid_records` function is complete. Now, remove `print(find_invalid
 Going back to the `validate` function, after the two if statements and still inside the `for` loop, create a variable named `invalid_records`.
 
 Then, assign it a call to `find_invalid_records` using the `**` operator to unpack `dictionary`.
+
+## Step 43
+If you pass invalid data to the `validate` function, for example a list containing non-dictionary elements or dictionaries with missing and/or invalid keys, Python will raise an `AttributeError` and a `TypeError`, respectively. Feel free to verify it by modifying the `medical_records` list.
+
+To avoid that, after setting `is_invalid` to `True`, use the `continue` keyword to skip to the next iteration in both your `if` statements.
