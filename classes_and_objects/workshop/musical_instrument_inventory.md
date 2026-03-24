@@ -47,3 +47,9 @@ my_instance = ClassName(arg1, arg2)
 When you create this instance, Python calls your `__init__` method and stores the values as instance attributes that belong only to this specific instance.
 
 Outside the class definition, create an instance named `instrument_1` for an Oboe which is a woodwind instrument.
+
+## Step 5
+
+Create a second instance named `instrument_2` for a Trumpet which is a brass instrument.
+
+Notice how you can create multiple instances from the same class template. Each instance stores its own attribute values independently from other instances.
