@@ -73,3 +73,9 @@ Now that you understand how to access object attributes, remove the existing pri
 ## Step 8
 
 Inside the `MusicalInstrument` class, define another method named `play` with only the `self` parameter. The `self` parameter allows methods to access the specific instance's attributes.
+
+## Step 9
+
+Inside your `play` method, use `print()` to display a message about playing the instrument.
+
+Use an f-string to include the instrument's name in the message: `The [instrument name] is fun to play!`. The `[instrument name]` should be replaced with the actual name of the instrument.
