@@ -53,3 +53,15 @@ Outside the class definition, create an instance named `instrument_1` for an Obo
 Create a second instance named `instrument_2` for a Trumpet which is a brass instrument.
 
 Notice how you can create multiple instances from the same class template. Each instance stores its own attribute values independently from other instances.
+
+## Step 6
+
+You can access the attributes of your instances using dot notation:
+
+```python
+instance_name.attribute_name
+```
+
+This allows you to retrieve the values that were stored during initialization.
+
+Try printing the `name` and `instrument_type` attributes of both your instances. You'll be able to see the values you assigned when you created them.
