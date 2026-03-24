@@ -27,3 +27,9 @@ In Python, the `__init__` method is a special method known as the initializer me
 Inside your `MusicalInstrument` class, add an `__init__` method with three parameters: `self`, `name`, and `instrument_type`.
 
 The `self` parameter is a standard way to refer to the instance of the class and is required as the first parameter for all instance methods in a class.
+
+## Step 3
+
+In the `__init__` method, you need to assign the parameters to instance attributes. Instance attributes are variables that belong to a specific instance of a class.
+
+Inside your `__init__` method, assign the `name` parameter to `self.name` and the `instrument_type` parameter to `self.instrument_type`.
