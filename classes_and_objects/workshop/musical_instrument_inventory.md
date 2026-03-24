@@ -33,3 +33,17 @@ The `self` parameter is a standard way to refer to the instance of the class and
 In the `__init__` method, you need to assign the parameters to instance attributes. Instance attributes are variables that belong to a specific instance of a class.
 
 Inside your `__init__` method, assign the `name` parameter to `self.name` and the `instrument_type` parameter to `self.instrument_type`.
+
+## Step 4
+
+Now it's time to create instances of your `MusicalInstrument` class.
+
+To create an instance of a class, you call the class name like a function, passing the required arguments for the `__init__` method (except for `self`, which is automatically handled by Python).
+
+```python
+my_instance = ClassName(arg1, arg2)
+```
+
+When you create this instance, Python calls your `__init__` method and stores the values as instance attributes that belong only to this specific instance.
+
+Outside the class definition, create an instance named `instrument_1` for an Oboe which is a woodwind instrument.
