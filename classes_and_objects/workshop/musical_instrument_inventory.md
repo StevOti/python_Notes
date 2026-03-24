@@ -87,3 +87,15 @@ Next, add another method to your class named `get_fact` that returns a fact abou
 This method should have only the `self` parameter and return an f-string that says `The [instrument name] is part of the [instrument type] family of instruments.`
 
 Unlike the `play` method which prints a message directly, this method should return a string that can be used elsewhere in your code.
+
+## Step 11
+
+Now let's use the methods you've created.
+
+Call the `play()` method on your `instrument_1` instance. This will print the message about playing the Oboe.
+
+To call a method on an instance, use dot notation:
+
+```python
+instance_name.method_name()
+```
