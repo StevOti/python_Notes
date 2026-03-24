@@ -69,3 +69,7 @@ Try printing the `name` and `instrument_type` attributes of both your instances.
 ## Step 7
 
 Now that you understand how to access object attributes, remove the existing print calls.
+
+## Step 8
+
+Inside the `MusicalInstrument` class, define another method named `play` with only the `self` parameter. The `self` parameter allows methods to access the specific instance's attributes.
