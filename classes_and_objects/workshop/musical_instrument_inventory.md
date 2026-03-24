@@ -65,3 +65,7 @@ instance_name.attribute_name
 This allows you to retrieve the values that were stored during initialization.
 
 Try printing the `name` and `instrument_type` attributes of both your instances. You'll be able to see the values you assigned when you created them.
+
+## Step 7
+
+Now that you understand how to access object attributes, remove the existing print calls.
