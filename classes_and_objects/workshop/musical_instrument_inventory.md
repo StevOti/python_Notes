@@ -79,3 +79,11 @@ Inside the `MusicalInstrument` class, define another method named `play` with on
 Inside your `play` method, use `print()` to display a message about playing the instrument.
 
 Use an f-string to include the instrument's name in the message: `The [instrument name] is fun to play!`. The `[instrument name]` should be replaced with the actual name of the instrument.
+
+## Step 10
+
+Next, add another method to your class named `get_fact` that returns a fact about the instrument.
+
+This method should have only the `self` parameter and return an f-string that says `The [instrument name] is part of the [instrument type] family of instruments.`
+
+Unlike the `play` method which prints a message directly, this method should return a string that can be used elsewhere in your code.
