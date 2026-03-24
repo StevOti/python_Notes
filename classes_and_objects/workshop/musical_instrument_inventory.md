@@ -105,3 +105,9 @@ instance_name.method_name()
 Now, call the `get_fact()` method on the `instrument_1` instance and print the result.
 
 Since `get_fact()` returns a string instead of printing it directly, you need to use `print()` to display the returned string.
+
+## Step 13
+
+Finally, do the same for `instrument_2`. Call the `play()` method on `instrument_2`, and then print the result of calling `get_fact()` on `instrument_2`.
+
+This will complete your musical instrument workshop!
