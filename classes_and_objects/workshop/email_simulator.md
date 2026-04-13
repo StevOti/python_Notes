@@ -178,3 +178,23 @@ Where `status` is the status of the email, `sender` is the sender's name, and `s
 Now you'll create a method to list all emails in the inbox. This method should handle the case where the inbox is empty and display a numbered list of emails when there are emails present.
 
 Add a method called `list_emails` to your `Inbox` class that takes `self` as a parameter. First, create an `if` statement to check if the inbox is empty by testing the `emails` list. If it's empty, print the message `Your inbox is empty.\n`. Add a `return` statement to exit the method.
+
+## Step 31
+
+After the empty inbox check, print the message `\nYour Emails:`. After that, iterate over all emails in the inbox using a `for` loop with enumeration. This is the syntax for enumeration with a starting number: `enumerate(iterable, start=start_number)`.
+
+Use enumeration to number the emails starting from 1. Use `i` (the index) and `email` (the email object) as the iteration variables.
+
+Inside the loop, print an f-string with the iteration index followed by a `.`, then a space and the string representation of the email object in this format:
+
+```python
+i. string_representation
+```
+
+Where `i` is the index and `string_representation` is the representation of the email object.
+
+## Step 32
+
+The inbox needs a method to read a specific email. When a user wants to read an email, they'll specify which email number (starting from index 0) they want to see, and the method will display the full email content.
+
+Add a method called `read_email` to your `Inbox` class that takes an `index` parameter. First, check if the inbox is empty and print the message `Inbox is empty.\n` if it is. Add a `return` statement after that to exit the method.
