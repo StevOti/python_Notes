@@ -100,3 +100,7 @@ Create two `User` objects: `alice` with name `"Alice"` and `bob` with name `"Bob
 Have Alice send an email to Bob to see if the email delivery works correctly.
 
 Use Alice's `send_email` method to send Bob an email with subject `"Hello"` and body `"Hi Bob, how are you?"`.
+
+## Step 19
+
+Now let's verify that the email was delivered successfully by printing the length of Bob's inbox emails.
