@@ -49,3 +49,22 @@ Remove the `email_obj` and the following print statements.
 Now that you have an initial setup of the `Email` class, it's time to create users who can send and receive emails. Each user will have a name and will be able to perform email operations.
 
 Create a `User` class with an `__init__` method that takes `self` and `name` as parameters. Within the class, assign the `name` parameter to `self.name`.
+
+## Step 11
+
+The `User` class needs a method to send emails to other users. When sending an email, you'll create a new `Email` object and add it to the receiver's inbox.
+
+Create a method called `send_email` in your `User` class. This method should take parameters for `receiver`, `subject`, and `body`.
+
+Inside the method, create a new `Email` object with the following parameter values and assign it to a variable named `email`:
+
+- `sender`: `self` (the current user)
+- `receiver`: `receiver` (the user receiving the email)
+- `subject`: `subject` (the subject of the email)
+- `body`: `body` (the body of the email)
+
+## Step 12
+
+Now that users can send emails, they need a way to store emails they receive. Each user should have an inbox to collect their emails.
+
+Add an `inbox` attribute to the `User` class `__init__` method and initialize it as an empty list `[]`. This will store all emails that the user receives.
