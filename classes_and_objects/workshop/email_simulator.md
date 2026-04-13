@@ -120,3 +120,10 @@ This method would be used to display the email's full content in a nicely format
 ## Step 22
 
 Now let's add a header to the email display. In the `display_full_email` method, after calling `mark_as_read()`, print `\n--- Email ---` to start the email display with a clear header.
+
+## Step 23
+
+Now let's display the sender and receiver information. To show who sent and received the email, add two print statements to the `display_full_email` method in this format:
+
+- `From: sender` where `sender` is replaced with the sender's name
+- `To: receiver` where `receiver` is replaced with the receiver's name
