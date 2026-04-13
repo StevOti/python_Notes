@@ -39,3 +39,13 @@ Add a method called `mark_as_read` to your `Email` class. This method should tak
 ## Step 8
 
 Now, test the `mark_as_read` method you created in the `Email` class. Use the method on the existing `Email` object `email_obj` to change the status. After marking the email as read, print the `read` attribute of `email_obj` to confirm the change.
+
+## Step 9
+
+Remove the `email_obj` and the following print statements.
+
+## Step 10
+
+Now that you have an initial setup of the `Email` class, it's time to create users who can send and receive emails. Each user will have a name and will be able to perform email operations.
+
+Create a `User` class with an `__init__` method that takes `self` and `name` as parameters. Within the class, assign the `name` parameter to `self.name`.
