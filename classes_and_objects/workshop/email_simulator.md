@@ -108,3 +108,15 @@ Now let's verify that the email was delivered successfully by printing the lengt
 ## Step 20
 
 Now that the email has been received, remove object creations, method calls, and print statements.
+
+## Step 21
+
+Users need a way to read their emails properly.
+
+Add a `display_full_email` method to the `Email` class that takes only `self` as a parameter. Inside this method, call `mark_as_read()` method to mark the email as read when someone views it.
+
+This method would be used to display the email's full content in a nicely formatted way.
+
+## Step 22
+
+Now let's add a header to the email display. In the `display_full_email` method, after calling `mark_as_read()`, print `\n--- Email ---` to start the email display with a clear header.
