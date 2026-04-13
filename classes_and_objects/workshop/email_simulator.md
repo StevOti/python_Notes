@@ -210,3 +210,16 @@ Within the `read_email` method, subtract 1 from the `index` parameter and store 
 ## Step 34
 
 After getting the actual index, create an `if` statement to check if the `actual_index` is less than 0 or greater than or equal to the length of the `self.emails` list. If it is, print the message `Invalid email number.\n` and use `return` to exit the method.
+## Step 35
+
+When the email index is valid, access the email at `actual_index`, call its `display_full_email` method to show the email content.
+
+## Step 36
+
+Your inbox also needs a way to delete emails.
+
+Python's `del` keyword can be used to delete items from a list by their index.
+
+Add a method called `delete_email` to your `Inbox` class. Like `read_email`, it should:
+
+- Take an `index` parameter, check for an empty inbox, and print the message `Inbox is empty.\n` if it is. Use `return` to exit the method.
