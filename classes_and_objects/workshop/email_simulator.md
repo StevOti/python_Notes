@@ -127,3 +127,9 @@ Now let's display the sender and receiver information. To show who sent and rece
 
 - `From: sender` where `sender` is replaced with the sender's name
 - `To: receiver` where `receiver` is replaced with the receiver's name
+
+## Step 24
+
+Now add the subject line to the email display. In the `display_full_email` method, add a print statement to show the email's subject in this format:
+
+- `Subject: subject` where `subject` is replaced with the subject of the email
