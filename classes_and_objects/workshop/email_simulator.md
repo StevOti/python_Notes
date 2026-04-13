@@ -133,3 +133,11 @@ Now let's display the sender and receiver information. To show who sent and rece
 Now add the subject line to the email display. In the `display_full_email` method, add a print statement to show the email's subject in this format:
 
 - `Subject: subject` where `subject` is replaced with the subject of the email
+
+## Step 25
+
+Now add the email body to complete the main content. In the `display_full_email` method, add another print statement in the format `Body: body` (where `body` is the content of the email) to show the email's content.
+
+## Step 26
+
+Finally, let's add a footer to complete the email display format. Add a final print statement: `print('------------\n')` to close off the email display with a nice separator line.
