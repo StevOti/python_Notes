@@ -104,3 +104,7 @@ Use Alice's `send_email` method to send Bob an email with subject `"Hello"` and 
 ## Step 19
 
 Now let's verify that the email was delivered successfully by printing the length of Bob's inbox emails.
+
+## Step 20
+
+Now that the email has been received, remove object creations, method calls, and print statements.
