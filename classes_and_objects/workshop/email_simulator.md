@@ -29,3 +29,13 @@ Emails should track whether they've been read or not. Add a `read` attribute to 
 ## Step 6
 
 Now let's test that the `read` attribute was added correctly to your `Email` class. Since you already have an email object from the previous steps, print the `read` attribute to see that it's now `False` by default.
+
+## Step 7
+
+Now you'll add a method to mark an email as read. When someone opens an email, you want to change its status from unread to read. This method will be simple - it just needs to set the `read` attribute to `True`.
+
+Add a method called `mark_as_read` to your `Email` class. This method should take only `self` as a parameter and set the `read` attribute to `True`.
+
+## Step 8
+
+Now, test the `mark_as_read` method you created in the `Email` class. Use the method on the existing `Email` object `email_obj` to change the status. After marking the email as read, print the `read` attribute of `email_obj` to confirm the change.
