@@ -21,3 +21,7 @@ Inside your `__init__` method, remove the `pass` keyword and assign the paramete
 Now let's test the `Email` class by creating an email object and checking that it stores information correctly. You'll print a couple of attributes to verify everything works.
 
 Create an email object named `email_obj` with `alice@example.com` as the sender, `bob@example.com` as the receiver, `Hello` as the subject, and `Hi Bob!` as the body. Then print the `sender` and `subject` attributes as separate print statements to verify they are stored correctly.
+
+## Step 5
+
+Emails should track whether they've been read or not. Add a `read` attribute to the `__init__` method and set it to `False` by default, since new emails start as unread.
