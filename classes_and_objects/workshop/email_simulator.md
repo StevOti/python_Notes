@@ -25,3 +25,7 @@ Create an email object named `email_obj` with `alice@example.com` as the sender,
 ## Step 5
 
 Emails should track whether they've been read or not. Add a `read` attribute to the `__init__` method and set it to `False` by default, since new emails start as unread.
+
+## Step 6
+
+Now let's test that the `read` attribute was added correctly to your `Email` class. Since you already have an email object from the previous steps, print the `read` attribute to see that it's now `False` by default.
