@@ -223,3 +223,13 @@ Python's `del` keyword can be used to delete items from a list by their index.
 Add a method called `delete_email` to your `Inbox` class. Like `read_email`, it should:
 
 - Take an `index` parameter, check for an empty inbox, and print the message `Inbox is empty.\n` if it is. Use `return` to exit the method.
+
+## Step 37
+
+When the email index is valid for deletion, convert the 1-based index parameter to a 0-based index by subtracting 1 and storing it in a variable called `actual_index`.
+
+Create an `if` statement to check if the `actual_index` is less than 0 or greater than or equal to the length of the `self.emails` list. If it is, print the message `Invalid email number.\n` and use `return` to exit the method.
+
+## Step 38
+
+When the inbox is not empty and the email index is valid, delete the email at the given index using the `del` keyword and print a confirmation message `Email deleted.\n`.
