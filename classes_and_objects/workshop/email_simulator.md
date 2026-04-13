@@ -15,3 +15,9 @@ Inside your `Email` class, remove the existing `pass` keyword and create the `__
 Inside the `__init__` method, you need to assign the parameter values to the object's attributes so each email can store its information.
 
 Inside your `__init__` method, remove the `pass` keyword and assign the parameters to `self.sender`, `self.receiver`, `self.subject`, and `self.body`.
+
+## Step 4
+
+Now let's test the `Email` class by creating an email object and checking that it stores information correctly. You'll print a couple of attributes to verify everything works.
+
+Create an email object named `email_obj` with `alice@example.com` as the sender, `bob@example.com` as the receiver, `Hello` as the subject, and `Hi Bob!` as the body. Then print the `sender` and `subject` attributes as separate print statements to verify they are stored correctly.
