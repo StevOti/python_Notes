@@ -198,3 +198,15 @@ Where `i` is the index and `string_representation` is the representation of the 
 The inbox needs a method to read a specific email. When a user wants to read an email, they'll specify which email number (starting from index 0) they want to see, and the method will display the full email content.
 
 Add a method called `read_email` to your `Inbox` class that takes an `index` parameter. First, check if the inbox is empty and print the message `Inbox is empty.\n` if it is. Add a `return` statement after that to exit the method.
+
+## Step 33
+
+When the inbox is not empty, you'll try to access the email at the given index and display it.
+
+Remember in the `list_emails` method, you displayed email numbers starting from 1, but list indices in Python start from 0. So, you'll need to convert the 1-based index to a 0-based index by subtracting 1.
+
+Within the `read_email` method, subtract 1 from the `index` parameter and store it in a variable called `actual_index`.
+
+## Step 34
+
+After getting the actual index, create an `if` statement to check if the `actual_index` is less than 0 or greater than or equal to the length of the `self.emails` list. If it is, print the message `Invalid email number.\n` and use `return` to exit the method.
