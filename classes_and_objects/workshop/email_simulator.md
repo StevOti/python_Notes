@@ -141,3 +141,24 @@ Now add the email body to complete the main content. In the `display_full_email`
 ## Step 26
 
 Finally, let's add a footer to complete the email display format. Add a final print statement: `print('------------\n')` to close off the email display with a nice separator line.
+
+## Step 27
+
+Let's add a string representation to our `Email` class so we can display brief email summaries.
+
+Add a `__str__` method to the `Email` class that takes `self` as a parameter.
+
+## Step 28
+
+Within the `__str__` method, you'll show whether an email has been read or not.
+
+Conditional expressions allow you to assign a value based on a condition in a single line.
+
+Example code:
+
+```python
+x = 10
+y = 'Even' if x % 2 == 0 else 'Odd'  # y will be Even
+```
+
+Within the method, use a conditional expression to assign the string `Read` to a variable `status` if the email is read, and `Unread` if it is not.
