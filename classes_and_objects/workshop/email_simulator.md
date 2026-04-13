@@ -3,3 +3,9 @@
 In this workshop, you are going to build an Email Simulator that simulates sending, receiving, and managing emails between different users. You'll learn about classes, objects, and how to organize code in an object-oriented way.
 
 Begin by creating a class named `Email` using the `class` keyword.
+
+## Step 2
+
+Your `Email` class needs to store information about each email when it's created.
+
+Inside your `Email` class, remove the existing `pass` keyword and create the `__init__` method that takes `self`, `sender`, `receiver`, `subject`, and `body` as parameters.
