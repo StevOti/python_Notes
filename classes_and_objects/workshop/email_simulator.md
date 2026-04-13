@@ -9,3 +9,9 @@ Begin by creating a class named `Email` using the `class` keyword.
 Your `Email` class needs to store information about each email when it's created.
 
 Inside your `Email` class, remove the existing `pass` keyword and create the `__init__` method that takes `self`, `sender`, `receiver`, `subject`, and `body` as parameters.
+
+## Step 3
+
+Inside the `__init__` method, you need to assign the parameter values to the object's attributes so each email can store its information.
+
+Inside your `__init__` method, remove the `pass` keyword and assign the parameters to `self.sender`, `self.receiver`, `self.subject`, and `self.body`.
