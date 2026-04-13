@@ -94,3 +94,9 @@ Still within the `send_email` method, call the `receive_email` method of the rec
 Now it's time to test our complete email system! Let's create some users and see the email functionality in action.
 
 Create two `User` objects: `alice` with name `"Alice"` and `bob` with name `"Bob"`. This will demonstrate how users can be created and interact with each other.
+
+## Step 18
+
+Have Alice send an email to Bob to see if the email delivery works correctly.
+
+Use Alice's `send_email` method to send Bob an email with subject `"Hello"` and body `"Hi Bob, how are you?"`.
