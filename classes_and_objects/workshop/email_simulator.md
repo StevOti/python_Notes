@@ -76,3 +76,21 @@ While users can send emails and have inboxes, we need a dedicated class to manag
 The `Inbox` class will store a list of emails and provide methods to add new emails, list all emails, and manage them.
 
 Create a new class called `Inbox` with an `__init__` method that initializes an empty list called `emails`.
+
+## Step 14
+
+Now it's time to connect the `User` and `Inbox` classes so that emails can actually be delivered!
+
+Users need to have proper `Inbox` objects instead of simple lists, and the `send_email` method should deliver emails to the receiver's inbox.
+
+Update the `User` class `__init__` in a way that each user gets an actual `Inbox` object instead of an empty list created earlier.
+
+## Step 16
+
+Still within the `send_email` method, call the `receive_email` method of the receiver's inbox to add `email` to the receiver's inbox.
+
+## Step 17
+
+Now it's time to test our complete email system! Let's create some users and see the email functionality in action.
+
+Create two `User` objects: `alice` with name `"Alice"` and `bob` with name `"Bob"`. This will demonstrate how users can be created and interact with each other.
