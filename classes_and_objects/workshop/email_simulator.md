@@ -233,3 +233,36 @@ Create an `if` statement to check if the `actual_index` is less than 0 or greate
 ## Step 38
 
 When the inbox is not empty and the email index is valid, delete the email at the given index using the `del` keyword and print a confirmation message `Email deleted.\n`.
+
+## Step 39
+
+Now we're ready to add timestamps to our emails to track when they were sent and received.
+
+First, import the datetime module at the top of your file.
+
+## Step 40
+
+Before integrating timestamps into our email system, let's practice working with datetime formatting. The `datetime.datetime.now()` function gives us the current date and time, and we can use the `strftime()` method to format it in different ways.
+
+Here's how `strftime()` works with format codes:
+
+```python
+now = datetime.datetime.now()
+print(now.strftime("%Y-%m-%d"))  # Output: 2024-03-15 (year-month-day with - separator)
+```
+
+The format codes like `%Y` (year), `%m` (month), `%d` (day) tell `strftime()` what to include, and you can add separators like `-` between them.
+
+At the bottom of your code, create a variable called `current_time` and assign it `datetime.datetime.now()`. Then use `strftime()` to print the time in hours:minutes:seconds format using `:` as the separator.
+
+Use these format codes: `%H` for hours (24-hour format), `%M` for minutes, and `%S` for seconds.
+
+## Step 41
+
+Great! Now that you've practiced datetime formatting, remove the `current_time` variable and the print statement from the bottom of your code. We'll integrate timestamps into the Email class in the next step.
+
+## Step 42
+
+Now let's add timestamps to our emails. In the `Email` class `__init__` method, create a `timestamp` attribute and assign the current time to it using `datetime.datetime.now()` to automatically set a timestamp for when the email was created.
+
+This is helpful for tracking when messages were sent and received.
