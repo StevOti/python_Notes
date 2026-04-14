@@ -314,3 +314,9 @@ After printing the header, call the `list_emails()` method on the user's inbox.
 For reading and deleting emails, add two methods to your `User` class: `read_email` and `delete_email`.
 
 Both methods should take an `index` parameter and call the corresponding method on `self.inbox`.
+
+## Step 48
+
+Now you'll create the main function that demonstrates your email simulator.
+
+Create the `main` function and inside it, using the `User` class, create two users: Tory and Ramy and assign them to variables `tory` and `ramy`, respectively.
