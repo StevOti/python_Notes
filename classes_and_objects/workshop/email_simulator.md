@@ -266,3 +266,29 @@ Great! Now that you've practiced datetime formatting, remove the `current_time` 
 Now let's add timestamps to our emails. In the `Email` class `__init__` method, create a `timestamp` attribute and assign the current time to it using `datetime.datetime.now()` to automatically set a timestamp for when the email was created.
 
 This is helpful for tracking when messages were sent and received.
+
+## Step 43
+
+Now let's show the timestamp when displaying the full email.
+
+Below the subject, print the received timestamp using `strftime()` to format it as `'%Y-%m-%d %H:%M'`. Use the following format:
+
+```python
+Received: date
+```
+
+Where `date` is formatted as `'%Y-%m-%d %H:%M'`.
+
+## Step 44
+
+Now let's also show timestamps in the email listing. Update the `__str__` method in the `Email` class to include the timestamp after the subject.
+
+Modify the return statement to include the timestamp formatted as `'%Y-%m-%d %H:%M'` at the end, separated by `| Time:`.
+
+The complete format should be:
+
+```python
+[status] From: sender | Subject: subject | Time: time
+```
+
+Where `status` is the status of the email, `sender` is the sender's name, `subject` is the subject of the email, and `time` is in the format `'%Y-%m-%d %H:%M'`.
