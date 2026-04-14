@@ -308,3 +308,9 @@ For checking the inbox, add a method called `check_inbox` to the `User` class. T
 The header should be formatted as: `\nName's Inbox:`, where `Name` is replaced with the name of the user.
 
 After printing the header, call the `list_emails()` method on the user's inbox.
+
+## Step 47
+
+For reading and deleting emails, add two methods to your `User` class: `read_email` and `delete_email`.
+
+Both methods should take an `index` parameter and call the corresponding method on `self.inbox`.
