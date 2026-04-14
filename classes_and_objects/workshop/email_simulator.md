@@ -292,3 +292,19 @@ The complete format should be:
 ```
 
 Where `status` is the status of the email, `sender` is the sender's name, `subject` is the subject of the email, and `time` is in the format `'%Y-%m-%d %H:%M'`.
+
+## Step 45
+
+Users should get confirmation when they successfully send an email. Let's improve the user experience by adding feedback to the `send_email` method.
+
+In the `send_email` method of the `User` class, add a print statement after the email is sent that shows confirmation. The message should be `Email sent from [sender_name] to [receiver_name]!\n`, where `[sender_name]` is replaced by the sender's name and `[receiver_name]` is replaced by the receiver's name.
+
+## Step 46
+
+Users should be able to check their inbox, read emails, and delete emails directly through their `User` object.
+
+For checking the inbox, add a method called `check_inbox` to the `User` class. This method should print a personalized header with the user's name and then display all their emails.
+
+The header should be formatted as: `\nName's Inbox:`, where `Name` is replaced with the name of the user.
+
+After printing the header, call the `list_emails()` method on the user's inbox.
