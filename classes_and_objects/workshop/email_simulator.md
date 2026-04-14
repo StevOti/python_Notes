@@ -324,3 +324,12 @@ Create the `main` function and inside it, using the `User` class, create two use
 ## Step 49
 
 Before sending the emails, add the standard Python idiom `if __name__ == '__main__':` followed by a call to `main()`. This ensures that the main function only runs when the script is executed directly, not when it's imported as a module.
+
+## Step 50
+
+Now you'll simulate sending some emails between the users.
+
+In your main function, after creating the users, use the `send_email` method to:
+
+Have Tory send an email to the `ramy` user object with subject `Hello` and body `Hi Ramy, just saying hello!`.
+Have Ramy send an email to the `tory` user object with subject `Re: Hello` and body `Hi Tory, hope you are fine`.
