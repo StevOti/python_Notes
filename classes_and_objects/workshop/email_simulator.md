@@ -320,3 +320,7 @@ Both methods should take an `index` parameter and call the corresponding method 
 Now you'll create the main function that demonstrates your email simulator.
 
 Create the `main` function and inside it, using the `User` class, create two users: Tory and Ramy and assign them to variables `tory` and `ramy`, respectively.
+
+## Step 49
+
+Before sending the emails, add the standard Python idiom `if __name__ == '__main__':` followed by a call to `main()`. This ensures that the main function only runs when the script is executed directly, not when it's imported as a module.
