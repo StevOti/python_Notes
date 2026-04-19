@@ -333,3 +333,16 @@ In your main function, after creating the users, use the `send_email` method to:
 
 Have Tory send an email to the `ramy` user object with subject `Hello` and body `Hi Ramy, just saying hello!`.
 Have Ramy send an email to the `tory` user object with subject `Re: Hello` and body `Hi Tory, hope you are fine`.
+
+## Step 51
+
+Now you'll demonstrate the inbox functionality. Ramy will check his inbox, read the first email, delete the second email, and then check his inbox again to see the changes.
+
+In your main function, after sending the emails, add code to:
+
+Have Ramy check his inbox using the `check_inbox` method.
+Have Ramy read the first email.
+Have Ramy delete the second email.
+Have Ramy check his inbox again.
+
+With this, you have completed the email simulator!
